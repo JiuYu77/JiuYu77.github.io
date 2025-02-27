@@ -1,9 +1,10 @@
 ---
-title: Text and Typography
+title: 网址收藏
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
-author: cotes
+author: jyu
+date: 2025-02-27 00:00:00 +0800
 categories: [Blogging, Demo]
-tags: [typography]
+tags: [website]
 pin: true
 ---
 
