@@ -24,9 +24,9 @@ pin: true
 |:---:|:---:|:----:|:----:|
 | Snipaste | ![snipaste](https://www.snipaste.com/img/logo.svg) | <https://www.snipaste.com> | Snipaste是一款简洁、功能齐全的截图软件 |
 | 7-Zip | ![7-zip](https://sparanoid.com/lab/7z/img/7ziplogo.png) | <https://sparanoid.com/lab/7z> | 7-Zip 是一款拥有极高压缩比的开源压缩软件 |
-| 火绒安全 | ![huorong](https://cdn-www.huorong.cn/assets/v5/images/logo.svg?v=2.4) | <https://www.huorong.cn> | 专业尽职  极致低调  只为巩固安全防线 |
+| 火绒安全 | ![huorong](/common/img/icon/huorong.svg) | <https://www.huorong.cn> | 专业尽职  极致低调  只为巩固安全防线 |
 | 格式工厂 | ![formatfactory](/common/img/icon/FormatFactory.png) | http://www.pcfreetime.com/formatfactory/index.php?language=zh | 免费多功能的多媒体文件转换工具 |
-| CAJ阅读器 | ![cajviewer](/common/img/icon/cajviewer.png) | http://cajviewer.cnki.net | 专业文献阅读器，可阅读CAJ、PDF等多种格式文件 |
+| CAJ阅读器 | ![cajviewer](/common/img/icon/cajviewer.png) | <https://cajviewer.cnki.net> | 专业文献阅读器，可阅读CAJ、PDF等多种格式文件 |
 
 ## 系统相关
 
@@ -37,7 +37,7 @@ pin: true
 | Ventoy | ![ventoy](https://www.ventoy.net/favicon.ico) | <https://www.ventoy.net> | Ventoy is an open source tool to create bootable USB drive for ISO files. |
 | Rufus | ![rufus](https://rufus.ie/favicon.ico) | <https://rufus.ie> | Rufus - 轻松创建 USB 启动盘;推荐：纯净安装系统，不会自动安装一下乱七八糟的软件 |
 | balena | ![balena](https://etcher.balena.io/images/webclip.png) | <https://etcher.balena.io> | Flash OS images to SD cards & USB drives, safely and easily.启动盘制作 |
-| vmware | ![vmware](https://docs.vmware.com/uicontent/images/vm-logo.png) | <https://docs.vmware.com/cn> | vmware虚拟机 |
+| vmware | ![vmware](https://docs.vmware.com/uicontent/images/vm-logo.png) | <https://www.vmware.com><https://docs.vmware.com> | vmware虚拟机 |
 | 分区助手 | ![disktool](https://www.disktool.cn/assets/images/logo.png) | <https://www.disktool.cn> | 无损分区、分区扩容、系统迁移 |
 | DiskGenius | ![diskgenius](https://www.diskgenius.cn/public/images/logo-diskgenius.png)| <https://www.diskgenius.cn> | 数据恢复、分区管理、备份还原 |
 | MobaXterm | ![mobaxterm](https://mobaxterm.mobatek.net/favicon.ico) | <https://mobaxterm.mobatek.net> | 远程计算的终极工具箱-包括X服务器、增强的SSH客户端等等！ |
