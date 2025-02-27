@@ -121,13 +121,13 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
+    repo: "JiuYu77/JiuYu77.github.io" # <gh-username>/<repo>
+    repo_id: "R_kgDON_-yxw"
+    category: "Announcements"
+    category_id: "DIC_kwDON_-yx84CnY1x"
+    mapping: "pathname" # optional, default to 'pathname'
     strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
+    input_position: "top" # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
