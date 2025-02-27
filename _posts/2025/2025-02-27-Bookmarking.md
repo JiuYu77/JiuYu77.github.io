@@ -25,7 +25,7 @@ pin: true
 | Snipaste | ![snipaste](https://www.snipaste.com/img/logo.svg) | <https://www.snipaste.com> | Snipaste是一款简洁、功能齐全的截图软件 |
 | 7-Zip | ![7-zip](https://sparanoid.com/lab/7z/img/7ziplogo.png) | <https://sparanoid.com/lab/7z> | 7-Zip 是一款拥有极高压缩比的开源压缩软件 |
 | 火绒安全 | ![huorong](/common/img/icon/huorong.svg) | <https://www.huorong.cn> | 专业尽职  极致低调  只为巩固安全防线 |
-| 格式工厂 | ![formatfactory](/common/img/icon/FormatFactory.png) | http://www.pcfreetime.com/formatfactory/index.php?language=zh | 免费多功能的多媒体文件转换工具 |
+| 格式工厂 | ![formatfactory](/common/img/icon/FormatFactory.png) | http://www.pcfreetime.com/formatfactory/ | 免费多功能的多媒体文件转换工具 |
 | CAJ阅读器 | ![cajviewer](/common/img/icon/cajviewer.png) | <https://cajviewer.cnki.net> | 专业文献阅读器，可阅读CAJ、PDF等多种格式文件 |
 
 ## 系统相关
