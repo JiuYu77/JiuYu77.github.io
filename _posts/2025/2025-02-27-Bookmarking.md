@@ -77,14 +77,14 @@ pin: true
 
 | 名字 | 图标 | 网址 | 描述 |
 |:---:|:---:|:----:|:----:|
-| Branin's.Base | ![](/common/img/icon/brainsbase.svg) | <http://www.brainsbase.co.jp> | 《夏目友人帐》系列《我的青春恋爱物语果然有问题》 |
+| Branin's.Base | ![](/common/img/icon/brainsbase.svg) | http://www.brainsbase.co.jp | 《夏目友人帐》系列《我的青春恋爱物语果然有问题》 |
 | SHAFT Animation Studio | ![](/common/img/icon/shaft.png) | <https://www.shaft-web.co.jp> | 《物语系列》《魔法少女小圆》 |
 | Bandai Namco Filmworks INC | ![](https://www.bnfw.co.jp/images/groupHeader/logo/groupLogo-01.svg) | <https://www.bnfw.co.jp> | 《关于我转生变成史莱姆这档事》 |
 | 东映动画 | ![](https://www.toei-anim.co.jp/common/images/pic_logo.gif) | <https://www.toei-anim.co.jp> | 《龙珠》《海贼王》 |
-| 动画工房 | ![](/common/img/icon/dogakobo.png) | <http://www.dogakobo.com> | 《干物妹小埋》《NEW GAME!》 |
+| 动画工房 | ![](/common/img/icon/dogakobo.png) | http://www.dogakobo.com | 《干物妹小埋》《NEW GAME!》 |
 | A-1 Pictures（A1社） | ![](https://a1p.jp/wp/wp-content/uploads/2019/03/ogp.jpg) | <https://a1p.jp> | 《刀剑神域》《辉夜大小姐想让我告白》 |
-| ufotable（飞碟社） | ![](/common/img/icon/ufotable.png) | <https://www.ufotable.com> | 《Fate/Zero》《鬼灭之刃》 |
+| ufotable（飞碟社） | ![](/common/img/icon/ufotable.png) | https://www.ufotable.com | 《Fate/Zero》《鬼灭之刃》 |
 | BONES（骨头社） | ![](https://www.bones.co.jp/wordpress/wp-content/themes/bones/assets/images/common/common/logo_header.png) | <https://www.bones.co.jp> | 《钢之炼金术师FA》《灵能百分百》 |
 | 京都动画（京阿尼） | ![](https://www.kyotoanimation.co.jp/img/logo.png) | <https://www.kyotoanimation.co.jp> | 《凉宫春日的忧郁》《轻音少女》 |
-| J.C.STAFF（节操社） | ![](/common/img/icon/jcstaff.gif) | <http://jcstaff.co.jp> | 《龙与虎》《某科学的超电磁炮》 |
+| J.C.STAFF（节操社） | ![](/common/img/icon/jcstaff.gif) | http://jcstaff.co.jp | 《龙与虎》《某科学的超电磁炮》 |
 
