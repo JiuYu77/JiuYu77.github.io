@@ -17,6 +17,10 @@ pin: true
 | 知乎 | ![zhihu](https://static.zhihu.com/heifetz/assets/apple-touch-icon-152.81060cab.png) | <https://www.zhihu.com> | 中文互联网高质量的问答社区和创作者聚集的原创内容平台 |
 | 博客园 | ![cnblogs](/common/img/icon/cnblogs.png) | <https://www.cnblogs.com> | 专注于为开发者服务，帮助开发者用代码改变世界 |
 | 菜鸟教程 | ![runoob](https://www.runoob.com/images/logo.png) | <https://www.runoob.com> | 菜鸟教程提供了编程的基础技术教程 |
+| 稀土掘金 | ![juejin](https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg) | <https://juejin.cn> | 掘金是面向全球中文开发者的技术内容分享与交流平台 |
+| 51CTO博客 | ![51cto](/common/img/icon/51cto.ico) | <https://blog.51cto.com> | 51CTO博客成立于2005年。上51CTO博客，用代码撬动世界！ |
+| Google for Developers | ![google-for-developers](/common/img/icon/google-for-developers.png) | <https://developers.google.cn> | 探索开发人员资源、社区活动和励志故事，帮助您构建更智能、更快速的产品 |
+
 
 ## 工具软件
 
@@ -80,7 +84,7 @@ pin: true
 | SHAFT Animation Studio | ![shaft](/common/img/icon/shaft.png) | <https://www.shaft-web.co.jp> | 《物语系列》《魔法少女小圆》 |
 | Bandai Namco Filmworks INC | ![bnfw](https://www.bnfw.co.jp/images/groupHeader/logo/groupLogo-01.svg) | <https://www.bnfw.co.jp> | 《关于我转生变成史莱姆这档事》 |
 | 东映动画 | ![toei](https://www.toei-anim.co.jp/common/images/pic_logo.gif) | <https://www.toei-anim.co.jp> | 《龙珠》《海贼王》 |
-| 动画工房 | ![dogakobo](/common/img/icon/dogakobo.png) | http://www.dogakobo.com | 《干物妹小埋》《NEW GAME!》 |
+| 动画工房 | ![dogakobo](/common/img/icon/dogakobo.png) | <https://www.dogakobo.com> | 《干物妹小埋》《NEW GAME!》 |
 | A-1 Pictures（A1社） | ![](https://a1p.jp/wp/wp-content/uploads/2019/03/ogp.jpg) | <https://a1p.jp> | 《刀剑神域》《辉夜大小姐想让我告白》 |
 | ufotable（飞碟社） | ![ufotable](/common/img/icon/ufotable.png) | <https://www.ufotable.com> | 《Fate/Zero》《鬼灭之刃》 |
 | BONES（骨头社） | ![bones](https://www.bones.co.jp/wordpress/wp-content/themes/bones/assets/images/common/common/logo_header.png) | <https://www.bones.co.jp> | 《钢之炼金术师FA》《灵能百分百》 |
