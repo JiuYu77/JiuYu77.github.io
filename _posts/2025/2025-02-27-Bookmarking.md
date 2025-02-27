@@ -12,8 +12,8 @@ pin: true
 
 | 名字 | 图标 | 网址 | 描述 |
 |:---:|:---:|:----:|:----:|
-| GitHub | ![](https://github.githubassets.com/favicons/favicon.svg) | <https://github.com> | github是一个基于git的代码托管平台。 |
-| CSDN | ![](https://img-home.csdnimg.cn/images/20201124032511.png) | <https://www.csdn.net> | CSDN是全球知名中文IT技术交流平台。 |
+| GitHub | ![github](https://github.githubassets.com/favicons/favicon.svg) | <https://github.com> | github是一个基于git的代码托管平台。 |
+| CSDN | ![csdn](https://img-home.csdnimg.cn/images/20201124032511.png) | <https://www.csdn.net> | CSDN是全球知名中文IT技术交流平台。 |
 
 ## 工具软件
 
