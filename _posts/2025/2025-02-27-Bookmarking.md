@@ -62,13 +62,12 @@ pin: true
 | Code::Blocks | ![codeblocks](/common/img/icon/codeblocks.png) | <https://www.codeblocks.org> | CB是一个免费的C/C++和Fortran IDE，旨在满足用户最苛刻的需求。它的设计是非常可扩展和完全可配置的。 |
 
 
-
 ## 学术研究
 
 | 名字 | 图标 | 网址 | 描述 |
 |:---:|:---:|:----:|:----:|
 | 中国知网 | ![cnki](https://k.cnki.net/favicon.ico) | <https://www.cnki.net> | 面向海内外读者提供中国学术文献、外文文献、学位论文、报纸、会议、年鉴、工具书等各类资源统一检索、统一导航、在线阅读和下载服务。|
-| Sci-Hub文献检索 | 科学是照亮世界的火把 | ![sci-hub](https://sci-hub.org.cn/static/favicon-png.ico) | <https://sci-hub.org.cn> | Sci-Hub文献检索是一个集文献检索、文献下载与文献互助于一体的学术服务网站。|
+| Sci-Hub文献检索 \| 科学是照亮世界的火把 | ![sci-hub](https://sci-hub.org.cn/static/favicon-png.ico) | <https://sci-hub.org.cn> | Sci-Hub文献检索是一个集文献检索、文献下载与文献互助于一体的学术服务网站。|
 | IEEE | ![ieee](https://www.ieee.org/etc/designs/ieee-org/favicon-48x48.png) | <https://www.ieee.org> | the world's largest technical professional organization; advancing technology for the benefit of humanity. |
 | arXiv.org e-Print archive | ![arxiv](https://arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png) | <https://arxiv.org> | arXiv is a free distribution service and an open-access archive |
 
@@ -77,13 +76,13 @@ pin: true
 
 | 名字 | 图标 | 网址 | 描述 |
 |:---:|:---:|:----:|:----:|
-| Branin's.Base | ![brainsbase](/common/img/icon/brainsbase.svg) | http://www.brainsbase.co.jp | 《夏目友人帐》系列《我的青春恋爱物语果然有问题》 |
+| Branin's.Base | ![brainsbase](/common/img/icon/brainsbase.png) | http://www.brainsbase.co.jp | 《夏目友人帐》系列《我的青春恋爱物语果然有问题》 |
 | SHAFT Animation Studio | ![shaft](/common/img/icon/shaft.png) | <https://www.shaft-web.co.jp> | 《物语系列》《魔法少女小圆》 |
 | Bandai Namco Filmworks INC | ![bnfw](https://www.bnfw.co.jp/images/groupHeader/logo/groupLogo-01.svg) | <https://www.bnfw.co.jp> | 《关于我转生变成史莱姆这档事》 |
 | 东映动画 | ![toei](https://www.toei-anim.co.jp/common/images/pic_logo.gif) | <https://www.toei-anim.co.jp> | 《龙珠》《海贼王》 |
 | 动画工房 | ![dogakobo](/common/img/icon/dogakobo.png) | http://www.dogakobo.com | 《干物妹小埋》《NEW GAME!》 |
 | A-1 Pictures（A1社） | ![](https://a1p.jp/wp/wp-content/uploads/2019/03/ogp.jpg) | <https://a1p.jp> | 《刀剑神域》《辉夜大小姐想让我告白》 |
-| ufotable（飞碟社） | ![ufotable](/common/img/icon/ufotable.png) | https://www.ufotable.com | 《Fate/Zero》《鬼灭之刃》 |
+| ufotable（飞碟社） | ![ufotable](/common/img/icon/ufotable.png) | <https://www.ufotable.com> | 《Fate/Zero》《鬼灭之刃》 |
 | BONES（骨头社） | ![bones](https://www.bones.co.jp/wordpress/wp-content/themes/bones/assets/images/common/common/logo_header.png) | <https://www.bones.co.jp> | 《钢之炼金术师FA》《灵能百分百》 |
 | 京都动画（京阿尼） | ![kyotoanimation](https://www.kyotoanimation.co.jp/img/logo.png) | <https://www.kyotoanimation.co.jp> | 《凉宫春日的忧郁》《轻音少女》 |
 | J.C.STAFF（节操社） | ![jcstaff](/common/img/icon/jcstaff.gif) | http://jcstaff.co.jp | 《龙与虎》《某科学的超电磁炮》 |
