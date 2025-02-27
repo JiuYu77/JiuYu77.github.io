@@ -53,14 +53,18 @@ pin: true
 | Jupyter | ![jupyter](https://jupyter.org/favicon.ico) | <https://jupyter.org> | Jupyter笔记本是一个基于网络的交互式计算平台。 |
 
 
-## IDE集成开发环境
+
+
+
+
+## 学术研究
 
 | 名字 | 图标 | 网址 | 描述 |
 |:---:|:---:|:----:|:----:|
-| Visual Studio | ![visualstudio](/common/img/icon/visualstudio.png) | <https://visualstudio.microsoft.com> | 用于编辑、调试和生成代码，发布应用;还包括编译器、代码补全工具、图形设计器等其他功能 |
-| PyCharm | ![pycharm]() | <https://www.jetbrains.com/pycharm> | Python IDE，智能代码补全、即时错误检查、快速修复等等... |
-| Code::Blocks | ![codeblocks](/common/img/icon/codeblocks.png) | <https://www.codeblocks.org> | CB是一个免费的C/C++和Fortran IDE，旨在满足用户最苛刻的需求。它的设计是非常可扩展和完全可配置的。 |
-
+| 中国知网 | ![cnki](https://k.cnki.net/favicon.ico) | <https://www.cnki.net> | 面向海内外读者提供中国学术文献、外文文献、学位论文、报纸、会议、年鉴、工具书等各类资源统一检索、统一导航、在线阅读和下载服务。|
+| Sci-Hub文献检索 | 科学是照亮世界的火把 | ![sci-hub](https://sci-hub.org.cn/static/favicon-png.ico) | <https://sci-hub.org.cn> | Sci-Hub文献检索是一个集文献检索、文献下载与文献互助于一体的学术服务网站。|
+| IEEE | ![ieee](https://www.ieee.org/etc/designs/ieee-org/favicon-48x48.png) | <https://www.ieee.org> | the world's largest technical professional organization; advancing technology for the benefit of humanity. |
+| arXiv.org e-Print archive | ![arxiv](https://arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png) | <https://arxiv.org> | arXiv is a free distribution service and an open-access archive |
 
 
 ## 日本动漫网站
