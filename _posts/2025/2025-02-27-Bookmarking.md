@@ -26,7 +26,7 @@ pin: true
 | 7-Zip | ![7-zip](https://sparanoid.com/lab/7z/img/7ziplogo.png) | <https://sparanoid.com/lab/7z> | 7-Zip 是一款拥有极高压缩比的开源压缩软件 |
 | 火绒安全 | ![huorong](https://cdn-www.huorong.cn/assets/v5/images/logo.svg?v=2.4) | <https://www.huorong.cn> | 专业尽职  极致低调  只为巩固安全防线 |
 | 格式工厂 | ![formatfactory](/common/img/icon/FormatFactory.png) | http://www.pcfreetime.com/formatfactory/index.php?language=zh | 免费多功能的多媒体文件转换工具 |
-| CAJ阅读器 | ![cajviewer](/common/img/icon//cajviewer.png) | http://cajviewer.cnki.net | 专业文献阅读器，可阅读CAJ、PDF等多种格式文件 |
+| CAJ阅读器 | ![cajviewer](/common/img/icon/cajviewer.png) | http://cajviewer.cnki.net | 专业文献阅读器，可阅读CAJ、PDF等多种格式文件 |
 
 ## 系统相关
 
@@ -49,7 +49,7 @@ pin: true
 | 名字 | 图标 | 网址 | 描述 |
 |:---:|:---:|:----:|:----:|
 | Visual Studio Code | ![visualstudio](https://code.visualstudio.com/favicon.ico) | <https://code.visualstudio.com> | 一个重新定义和优化的代码编辑器，用于构建和调试现代web和云应用程序 |
-| Vim | ![vim](pic/index/vim_header.gif) | <https://www.vim.org> | 一个高度可配置的文本编辑器，可以非常高效地创建和更改任何类型的文本 |
+| Vim | ![vim](/common/img/icon/vim_header.gif) | <https://www.vim.org> | 一个高度可配置的文本编辑器，可以非常高效地创建和更改任何类型的文本 |
 | Jupyter | ![jupyter](https://jupyter.org/favicon.ico) | <https://jupyter.org> | Jupyter笔记本是一个基于网络的交互式计算平台。 |
 
 
