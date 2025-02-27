@@ -53,7 +53,13 @@ pin: true
 | Jupyter | ![jupyter](https://jupyter.org/favicon.ico) | <https://jupyter.org> | Jupyter笔记本是一个基于网络的交互式计算平台。 |
 
 
+## IDE集成开发环境
 
+| 名字 | 图标 | 网址 | 描述 |
+|:---:|:---:|:----:|:----:|
+| Visual Studio | ![visualstudio](/common/img/icon/visualstudio.png) | <https://visualstudio.microsoft.com> | 用于编辑、调试和生成代码，发布应用;还包括编译器、代码补全工具、图形设计器等其他功能 |
+| PyCharm | ![pycharm](/common/img/icon/pycharm.png) | <https://www.jetbrains.com/pycharm> | Python IDE，智能代码补全、即时错误检查、快速修复等等... |
+| Code::Blocks | ![codeblocks](/common/img/icon/codeblocks.png) | <https://www.codeblocks.org> | CB是一个免费的C/C++和Fortran IDE，旨在满足用户最苛刻的需求。它的设计是非常可扩展和完全可配置的。 |
 
 
 
