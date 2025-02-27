@@ -37,7 +37,7 @@ pin: true
 | Ventoy | ![ventoy](https://www.ventoy.net/favicon.ico) | <https://www.ventoy.net> | Ventoy is an open source tool to create bootable USB drive for ISO files. |
 | Rufus | ![rufus](https://rufus.ie/favicon.ico) | <https://rufus.ie> | Rufus - 轻松创建 USB 启动盘;推荐：纯净安装系统，不会自动安装一下乱七八糟的软件 |
 | balena | ![balena](https://etcher.balena.io/images/webclip.png) | <https://etcher.balena.io> | Flash OS images to SD cards & USB drives, safely and easily.启动盘制作 |
-| vmware | ![vmware](/common/img/icon/vmware-logo-grey.svg) | <https://www.vmware.com><https://docs.vmware.com> | vmware虚拟机 |
+| vmware | ![vmware](/common/img/icon/vmware-logo.png) | <https://www.vmware.com><https://docs.vmware.com> | vmware虚拟机 |
 | 分区助手 | ![disktool](https://www.disktool.cn/assets/images/logo.png) | <https://www.disktool.cn> | 无损分区、分区扩容、系统迁移 |
 | DiskGenius | ![diskgenius](https://www.diskgenius.cn/public/images/logo-diskgenius.png)| <https://www.diskgenius.cn> | 数据恢复、分区管理、备份还原 |
 | MobaXterm | ![mobaxterm](https://mobaxterm.mobatek.net/favicon.ico) | <https://mobaxterm.mobatek.net> | 远程计算的终极工具箱-包括X服务器、增强的SSH客户端等等！ |
