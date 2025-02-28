@@ -167,7 +167,7 @@ kramdown:
       line_numbers: true
       start_line: 1
   input: GFM
-  hard_wrap: true
+  hard_wrap: false
 
 collections:
   tabs:
