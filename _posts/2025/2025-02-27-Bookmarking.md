@@ -12,7 +12,6 @@ table {
   white-space: normal;
 }
 th, td {
-    word-wrap: break-word;
     white-space: normal;
 }
 </style>
