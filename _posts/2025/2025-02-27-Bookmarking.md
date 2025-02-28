@@ -8,9 +8,7 @@ tags: [website]
 pin: true
 ---
 <style>
-table {
-  white-space: normal;
-}
+
 th, td {
     white-space: normal;
 }
