@@ -7,10 +7,11 @@ categories: [Blogging, Demo]
 tags: [website]
 pin: true
 ---
-
+<style>
 table {
   white-space: normal;
 }
+</style>
 
 ## 技术社区/网站
 
