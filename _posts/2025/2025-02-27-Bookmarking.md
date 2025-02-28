@@ -8,9 +8,8 @@ tags: [website]
 pin: true
 ---
 <style>
-
-th, td {
-    white-space: normal;
+table-cell {
+  white-space: normal;
 }
 </style>
 
