@@ -8,9 +8,10 @@ tags: [website]
 pin: true
 ---
 <style>
-table {
-  white-space: normal;
-}
+th, td {
+    word-wrap: break-word;
+    white-space: normal;
+  }
 </style>
 
 ## 技术社区/网站
