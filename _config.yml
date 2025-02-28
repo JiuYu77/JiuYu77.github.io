@@ -166,6 +166,7 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+  hard_wrap: true
 
 collections:
   tabs:
