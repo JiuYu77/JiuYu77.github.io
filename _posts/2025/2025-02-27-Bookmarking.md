@@ -8,6 +8,10 @@ tags: [website]
 pin: true
 ---
 
+%table-cell {
+  white-space: normal;
+}
+
 ## 技术社区/网站
 
 | 名字 | 图标 | 网址 | 描述 |
