@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
-gem 'jekyll-theme-chirpier', git: 'https://github.com/JiuYu77/jekyll-theme-chirpier', branch: 'dependabot/npm_and_yarn/dev-deps-050fa785e8'
+gem 'jekyll-theme-chirpier', git: 'https://github.com/JiuYu77/jekyll-theme-chirpier'
 
 gem "html-proofer", "~> 5.0", group: :test
 
