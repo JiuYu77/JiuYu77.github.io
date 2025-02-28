@@ -5,7 +5,7 @@ source "https://rubygems.org"
 # gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
 # gem 'jekyll-theme-chirpier', git: 'https://github.com/JiuYu77/jekyll-theme-chirpier'
 # gem 'jekyll-theme-chirpy', git: 'https://github.com/cotes2020/jekyll-theme-chirpy.git'
-gem 'jekyll-theme-chirpy', git: 'cotes2020/jekyll-theme-chirpy'
+gem 'jekyll-theme-chirpy', github: 'cotes2020/jekyll-theme-chirpy'
 
 gem "html-proofer", "~> 5.0", group: :test
 
