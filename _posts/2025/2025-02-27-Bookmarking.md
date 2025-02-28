@@ -8,7 +8,7 @@ tags: [website]
 pin: true
 ---
 
-table-cell {
+table {
   white-space: normal;
 }
 
