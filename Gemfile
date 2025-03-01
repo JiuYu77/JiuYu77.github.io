@@ -8,7 +8,6 @@ source "https://rubygems.org"
 # gem "jekyll-theme-chirpier", "~> 0.0.0"
 gem "jekyll-theme-chirpier", "~> 0.0.2"
 # gem "jekyll-theme-chirpier", :git => "https://github.com/JiuYu77/jekyll-theme-chirpier.git"
-gem "jekyll-theme-chirpy", :git => "git://github.com/cotes2020/jekyll-theme-chirpy.git"
 
 gem "html-proofer", "~> 5.0", group: :test
 
