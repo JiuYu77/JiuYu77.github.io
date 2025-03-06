@@ -37,7 +37,7 @@ public:
 Singleton* Singleton::instance()
 {
     static Singleton single; // C++11及之后是线程安全的
-    return &single;
+    return &single;  // 返回 指针/地址
 }
 ```
 
