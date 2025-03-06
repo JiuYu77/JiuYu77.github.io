@@ -69,13 +69,12 @@ pin: true
 
 ## 学术研究
 
-| 名字 | 图标 | 网址 | 描述 |
-|:---:|:---:|:----:|:----:|
-| 中国知网 | ![cnki](/common/img/icon/cnki.ico) | <https://www.cnki.net> | 面向海内外读者提供中国学术文献、外文文献、学位论文、报纸、会议、年鉴、工具书等各类资源统一检索、统一导航、在线阅读和下载服务。|
-| Sci-Hub文献检索 \| 科学是照亮世界的火把 | ![sci-hub](https://sci-hub.org.cn/static/favicon-png.ico) | <https://sci-hub.org.cn> | Sci-Hub文献检索是一个集文献检索、文献下载与文献互助于一体的学术服务网站。|
-| IEEE | ![ieee](https://www.ieee.org/etc/designs/ieee-org/favicon-48x48.png) | <https://www.ieee.org> | the world's largest technical professional organization; advancing technology for the benefit of humanity. |
-| arXiv.org e-Print archive | ![arxiv](https://arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png) | <https://arxiv.org> | arXiv is a free distribution service and an open-access archive |
-
+| 名字 | 图标 | 网址 |
+|:---:|:---:|:----:|
+| 中国知网 | ![cnki](/common/img/icon/cnki.ico) | <https://www.cnki.net> |
+| Sci-Hub文献检索 \| 科学是照亮世界的火把 | ![sci-hub](https://sci-hub.org.cn/static/favicon-png.ico) | <https://sci-hub.org.cn> |
+| IEEE | ![ieee](https://www.ieee.org/etc/designs/ieee-org/favicon-48x48.png) | <https://www.ieee.org> |
+| arXiv.org e-Print archive | ![arxiv](https://arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png) | <https://arxiv.org> |
 
 ## 日本动漫网站
 
