@@ -43,10 +43,10 @@ public:
     : m_threads(thread_num), m_stop(false)
     {
         unsigned int threads = std::thread::hardware_concurrency(); // get the number of CPU cores
-        std::cout << "CPU Cores: " << threads << std::endl;
         if (m_threads > threads && threads != 0) {
-            m_threads = threads;
-        }
+            m_threads = threads;  // 防止线程数超过CPU核心数
+        }  // 根据具体情况，当前行及以上三行（共四行代码）可以保留，也可 删除
+
         for (int i = 0; i < m_threads; i++)
         {
             m_threadPool.emplace_back([this]()
