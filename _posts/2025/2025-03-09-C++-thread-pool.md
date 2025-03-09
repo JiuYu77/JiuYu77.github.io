@@ -24,11 +24,6 @@ tags: [C++]
 #include <functional>
 #include <mutex>
 
-template <typename T>
-void print(T&& t)
-{
-	std::cout << t << std::endl;
-}
 
 class ThreadPool
 {
