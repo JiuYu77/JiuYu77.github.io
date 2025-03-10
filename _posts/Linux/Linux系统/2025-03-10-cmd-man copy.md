@@ -3,9 +3,8 @@ title: man命令
 description: 网址推荐：操作系统、实用软件、社区、动漫...。
 author: yu
 date: 2025-03-10 11:10:41 +0800
-categories: [Linux, 命令]
+categories: [Linux, 系统, 网络编程]
 tags: [Linux]
-pin: true
 ---
 
 ## 简介
