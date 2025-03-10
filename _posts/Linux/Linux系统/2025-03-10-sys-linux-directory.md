@@ -5,7 +5,6 @@ author: yu
 date: 2025-03-10 12:16:00 +0800
 categories: [Linux, Linux系统-基础]
 tags: [Linux]
-math: true
 mermaid: true
 ---
 
@@ -42,29 +41,28 @@ graph LR
 	A-->B19[ /var ]
 ```
 
+## 根目录下各文件夹
 
-| 目录 | 说明 |
-|:----:|:----:|
-| /     | 根目录 |
-| /boot |2""|
-| /dev ||
-| /etc ||
-| /home ||
-| /media ||
-| /mnt ||
-| /opt ||
-| /proc ||
-| /root ||
-| /run ||
-| /bin ||
-| /sbin ||
-| /lib ||
-| /lib64 ||
-| /usr ||
-| /srv ||
-| /sys ||
-| /tmp ||
-| /var | 2|
+- **/**：根目录。
+- **/boot**
+- **/dev**
+- **/etc**
+- **/home**
+- **/media**
+- **/mnt**
+- **/opt**
+- **/proc**
+- **/root**
+- **/run**
+- **/bin**
+- **/sbin**
+- **/lib**
+- **/lib64**
+- **/usr**
+- **/srv**
+- **/sys**
+- **/tmp**
+- **/var**
 
 
 ## 日志目录
