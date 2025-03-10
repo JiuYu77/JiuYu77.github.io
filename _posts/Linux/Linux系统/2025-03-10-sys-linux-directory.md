@@ -9,32 +9,7 @@ math: true
 mermaid: true
 ---
 
-
-## Linux目录
-
-$$
-\begin{equation}
-  \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6}
-  \label{eq:series}
-\end{equation}
-$$
-
-We can reference the equation as \eqref{eq:series}.
-
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
-
-```mermaid
- gantt
-  title  Adding GANTT diagram functionality to mermaid
-  apple :a, 2017-07-20, 1w
-  banana :crit, b, 2017-07-23, 1d
-  cherry :active, c, after b a, 1d
-```
-
-### 目录结构
+## 目录结构
 
 ```mermaid
 graph LR
@@ -91,7 +66,9 @@ graph LR
 | /tmp ||
 | /var | 2|
 
-### 日志目录
+
+## 日志目录
+
 [在Linux中，日志文件通常存储在哪些目录？](https://www.cnblogs.com/huangjiabobk/p/18172420)
 * /var
    1. **/var/log/**
