@@ -3,7 +3,7 @@ title: C++实现线程池
 description: 线程池
 author: yu
 date: 2025-03-09 20:27:05 +0800
-categories: [Computer, C++, RR]
+categories: [Computer, 啊啊]
 tags: [C++]
 ---
 
