@@ -3,7 +3,7 @@ title: C++的函数指针
 description: 指针是地址，函数指针也是地址。
 author: yu
 date: 2025-02-27 16:15:36 +0800
-categories: [Computer, C++]
+categories: [C++]
 tags: [C++]
 ---
 

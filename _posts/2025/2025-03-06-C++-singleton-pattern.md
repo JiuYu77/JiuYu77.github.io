@@ -3,7 +3,7 @@ title: 单例模式
 description: 单例模式下一个类只允许有一个实例。
 author: yu
 date: 2025-03-06 16:22:24 +0800
-categories: [Computer, 设计模式(C++)]
+categories: [C++, 设计模式]
 tags: [设计模式, C++]
 ---
 
