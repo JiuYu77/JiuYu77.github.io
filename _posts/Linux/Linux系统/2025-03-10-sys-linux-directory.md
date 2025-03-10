@@ -10,6 +10,14 @@ tags: [Linux]
 
 ## Linux目录
 
+```mermaid
+ gantt
+  title  Adding GANTT diagram functionality to mermaid
+  apple :a, 2017-07-20, 1w
+  banana :crit, b, 2017-07-23, 1d
+  cherry :active, c, after b a, 1d
+```
+
 ### 目录结构
 
 ```mermaid
