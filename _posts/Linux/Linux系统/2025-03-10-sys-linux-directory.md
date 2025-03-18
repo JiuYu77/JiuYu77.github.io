@@ -19,6 +19,7 @@ Linux操作系统使用`单一目录树`结构，整个操纵系统只有一个`
 
 ```mermaid
 graph LR
+	title Linux操作系统目录结构
 	A[ / ]-->B1["/"boot]
 	A-->B2[ /dev ]
 	A-->B3[ /etc ]
