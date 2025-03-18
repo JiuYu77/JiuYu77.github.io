@@ -46,7 +46,7 @@ graph LR
 	A-->B17[ /sys ]
 	A-->B18[ /tmp ]
 	A-->B19[ /var ]
-	title Linux操作系统目录结构
+	title: Linux操作系统目录结构
 ```
 
 ## 根目录及下面各文件夹
