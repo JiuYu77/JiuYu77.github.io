@@ -1,6 +1,6 @@
 ---
 title: Linux目录
-description: 目录结构、文件权限。
+description: 目录结构。
 author: yu
 date: 2025-03-10 12:16:00 +0800
 categories: [Linux, Linux系统-基础]
