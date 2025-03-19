@@ -62,7 +62,7 @@ graph LR
 - **`/root`**：root用户主目录（Root User's Home Directory）。
 - **`/run`**：运行时数据目录（Run-time Directory）；包含运行时文件和进程间通信文件‌。
 - **`/bin`**：所有用户的二进制命令目录（Binary Directory）；  
-是/usr/bin/目录的软链接；存放用于系统管理和维护的常用、实用命令文件。
+  * 是/usr/bin/目录的软链接；存放用于系统管理和维护的常用、实用命令文件。
 - **`/sbin`**：系统管理的二进制命令目录（System Binary Directory）；  
 是/usr/sbin/目录的软链接；存放系统管理员或root用户使用的二进制命令文件。
 - **`/lib`**：库目录（Library Directory）；是/usr/lib/目录的软链接；存放动态链接共享库（.so文件，对应Windows系统的.dll文件）。
