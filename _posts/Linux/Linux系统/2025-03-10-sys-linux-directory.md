@@ -61,14 +61,14 @@ graph LR
 - **`/proc`**：进程信息及内核信息目录（Process Directory）；系统自动产生的映射，查看该目录中的文件可获取有关系统硬件运行的信息。
 - **`/root`**：root用户主目录（Root User's Home Directory）。
 - **`/run`**：运行时数据目录（Run-time Directory）；包含运行时文件和进程间通信文件‌。
-- **`/bin`**：所有用户的二进制命令目录（Binary Directory）；  
-  * 是/usr/bin/目录的软链接；存放用于系统管理和维护的常用、实用命令文件。
+- **`/bin`**：所有用户的二进制命令目录（Binary Directory）；是/usr/bin/目录的软链接；存放用于系统管理和维护的常用、实用命令文件。
 - **`/sbin`**：系统管理的二进制命令目录（System Binary Directory）；  
 是/usr/sbin/目录的软链接；存放系统管理员或root用户使用的二进制命令文件。
 - **`/lib`**：库目录（Library Directory）；是/usr/lib/目录的软链接；存放动态链接共享库（.so文件，对应Windows系统的.dll文件）。
 - **`/lib64`**：是/usr/lib64/目录的软链接。
-- **`/usr`**：Unix操作系统软件资源目录（Unix Software Resource Directory，User Software Resource Directory）；  
-存放应用程序和文件；所有系统默认的软件都会放置到/usr底下，包含二进制文件、库文件、文档和二级程序的源代码。
+- **`/usr`**
+  * Unix操作系统软件资源目录（Unix Software Resource Directory，User Software Resource Directory）；  
+  * 存放应用程序和文件；所有系统默认的软件都会放置到/usr底下，包含二进制文件、库文件、文档和二级程序的源代码。
 - **`/srv`**：服务数据目录（Service Directory）。
 - **`/sys`**：sysfs；一个虚拟文件系统（Virtual File System），它提供了一个接口，用于访问和修改内核的设备和驱动程序的状态。这个目录的内容是由内核在运行时动态生成的，反映了系统的硬件状态和内核的配置。
 - **`/tmp`**：临时文件目录（Temporary Directory）。
