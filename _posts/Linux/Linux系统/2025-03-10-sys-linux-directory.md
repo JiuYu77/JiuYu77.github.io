@@ -50,26 +50,29 @@ graph LR
 
 ## 根目录 及 系统目录
 
-- **`/`**：根目录。
-- **`/boot`**：存放用于系统启动的内核文件 和 引导装载程序文件。
-- **`/dev`**：存放设备文件。
-- **`/etc`**：存放系统配置文件，如网络配置、设备配置文件等。
-- **`/home`**：存放各个用户的主目录。其中的子目录是每个用户的主目录（家目录），名称为各用户的用户名。
-- **`/media`**：U盘、光盘、软盘等设备的默认挂载点。
-- **`/mnt`**：为某些设备提供的默认挂载点。
-- **`/opt`**
-- **`/proc`**
-- **`/root`**
-- **`/run`**
-- **`/bin`**
-- **`/sbin`**
-- **`/lib`**
-- **`/lib64`**
-- **`/usr`**
-- **`/srv`**
-- **`/sys`**
-- **`/tmp`**
-- **`/var`**
+- **`/`**：根目录，linux文件系统的最顶端。
+- **`/boot`**：Boot Directory，存放用于系统启动的内核文件 和 引导装载程序文件。
+- **`/dev`**：设备文件目录（Device Directory）；存放设备文件。
+- **`/etc`**：配置文件目录（Etcetera Directory）；存放系统配置文件，如网络配置、设备配置文件等。
+- **`/home`**：普通用户家目录（Home Directory）；存放各个用户的主目录；其中的子目录是每个用户的主目录（家目录），名称为各用户的用户名。
+- **`/media`**：可移动媒体设备（Media Directory）；用于挂载可移动设备的临时目录；U盘、光盘、软盘等设备的默认挂载点。
+- **`/mnt`**：挂载目录（Mount Directory）；为某些设备提供的默认挂载点。
+- **`/opt`**：可选的附加应用程序安装目录（Optional Directory）。
+- **`/proc`**：进程信息及内核信息目录（Process Directory）；系统自动产生的映射，查看该目录中的文件可获取有关系统硬件运行的信息。
+- **`/root`**：root用户主目录（Root User's Home Directory）。
+- **`/run`**：运行时数据目录（Run-time Directory）；包含运行时文件和进程间通信文件‌。
+- **`/bin`**：所有用户的二进制命令目录（Binary Directory）；  
+是/usr/bin/目录的软链接；存放用于系统管理和维护的常用、实用命令文件。
+- **`/sbin`**：系统管理的二进制命令目录（System Binary Directory）；  
+是/usr/sbin/目录的软链接；存放系统管理员或root用户使用的二进制命令文件。
+- **`/lib`**：库目录（Library Directory）；是/usr/lib/目录的软链接；存放动态链接共享库（.so文件，对应Windows系统的.dll文件）。
+- **`/lib64`**：是/usr/lib64/目录的软链接。
+- **`/usr`**：Unix操作系统软件资源目录（Unix Software Resource Directory，User Software Resource Directory）；  
+存放应用程序和文件；所有系统默认的软件都会放置到/usr底下，包含二进制文件、库文件、文档和二级程序的源代码。
+- **`/srv`**：服务数据目录（Service Directory）。
+- **`/sys`**：sysfs；一个虚拟文件系统（Virtual File System），它提供了一个接口，用于访问和修改内核的设备和驱动程序的状态。这个目录的内容是由内核在运行时动态生成的，反映了系统的硬件状态和内核的配置。
+- **`/tmp`**：临时文件目录（Temporary Directory）。
+- **`/var`**：变量文件目录（Variable Directory）；保存经常变化的内容，如系统日志。
 
 ## Linux的路径
 
