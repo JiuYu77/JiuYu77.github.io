@@ -187,10 +187,10 @@ echo $DISPLAY
     eog test.jpg
     ```
   - 如果 `feh` 能显示，说明 `xdg-open` 配置错误，可以修改默认程序：
-      ```shell
-      xdg-mime default feh.desktop image/jpeg
-      xdg-mime default feh.desktop image/png
-      ```
+    ```shell
+    xdg-mime default feh.desktop image/jpeg
+    xdg-mime default feh.desktop image/png
+    ```
 
 3. 程序自身限制（如 Firefox）  
 某些程序（如 `firefox`）可能默认禁用远程 X11：
