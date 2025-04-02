@@ -111,10 +111,10 @@ sudo libcamera-hello -t 0 --camera 0
 
 ### MobaXterm打开图片
 
-### MobaXterm打开图片报错
+MobaXterm打开图片报错：
 ![](/common/img/raspberryPi/Peas-notFound.png)
 
-安装Peas：
+解决方案是，安装Peas：
 ```shell
 sudo apt install libpeas-dev
 ```
@@ -122,9 +122,9 @@ sudo apt install libpeas-dev
 
 MobaXterm打开图片，不显示。
 
-### X11-Forwarding不显示图像
+### MobaXterm X11-Forwarding不显示图像
 
-MobaXterm ssh连接后，使用`xdg-open` 或 `open`等命令打开图片不显示图像。
+MobaXterm ssh连接 树莓派5 后，使用`xdg-open` 或 `open`等命令打开图片，不显示图像。
 
 #### 检测MobaXterm 是否开启 X11转发
 
