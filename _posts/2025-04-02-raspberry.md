@@ -42,6 +42,8 @@ sudo vim.tiny /boot/firmware/config.txt
 
 ## 测试
 
+### 使用摄像头
+
 ```shell
 rpicam-hello -t 0  # 一直开启
 rpicam-hello -t 10s  # 开启10秒
@@ -65,6 +67,8 @@ libcamera-jpeg -o test.jpg
 sudo rpicam-hello -t 0
 sudo libcamera-hello -t 0 --camera 0
 ```
+
+### MobaXterm打开图片
 
 MobaXterm打开图片报错：
 ![](/common/img/raspberryPi/Peas-notFound.png)
