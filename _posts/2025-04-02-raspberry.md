@@ -14,6 +14,7 @@ tags: [Raspberry Pi, apt]
 树莓派5 有两个`CSI`接口（摄像头接口，相机串行接口，Camera Serial Interface），分别为`CAM/DISP 0` 和 `CAM/DISP 1`，这两个接口的位置是挨在一起的。
 
 下图将`imx219`接到了`CAM/DISP 1`。
+
 _Raspberry Pi 5 与 imx219 连接示意图_
 ![](/common/img/raspberryPi/connect-imx219.jpg)
 _Raspberry Pi 5 与 imx219 连接示意图_
