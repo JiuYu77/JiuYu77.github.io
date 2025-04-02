@@ -3,7 +3,9 @@ title: 树莓派5 使用 imx219摄像头
 description: 树莓派5，77° imx219摄像头。
 author: yu
 date: 2025-04-02 11:32:48 +0800
-categories: [Blogging, 树莓派]
+categories:
+  - [Blogging, 树莓派]
+  - [Linux, 树莓派]
 tags: [Raspberry Pi, apt]
 ---
 
@@ -35,7 +37,7 @@ sudo vim.tiny /boot/firmware/config.txt
 1. 禁用摄像头自动检测：将`camera_auto_detect=1`改为`camera_auto_detect=0`。  
 ![](/common/img/raspberryPi/camera_auto_detect.png)
 2. 文件最后添加，`dtoverlay=imx219,cam0` 或 `dtoverlay=imx219,cam1`。  
-写入 cam0 还是 cam1，要与imx219连接的是 `CAM/DISP 0`（cam0） 还是 `CAM/DISP 1`（cam1）相对应。  
+写入 cam0 还是 cam1，要与imx219连接的是 `CAM/DISP 0`（cam0） 还是 `CAM/DISP 1`（cam1）对应。  
 ![](/common/img/raspberryPi/dtoverlay=.png)
 
 重启树莓派：`sudo reboot`。
