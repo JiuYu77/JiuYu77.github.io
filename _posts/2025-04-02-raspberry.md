@@ -79,3 +79,4 @@ sudo apt install libpeas-dev
 ```
 ![](/common/img/raspberryPi/Peas-install.png)
 
+MobaXterm打开图片，不显示。
