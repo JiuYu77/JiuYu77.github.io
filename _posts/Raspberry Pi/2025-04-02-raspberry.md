@@ -180,8 +180,7 @@ echo $DISPLAY
 2. xdg-open 调用错误  
 如果 `xdg-open test.jpg` 不显示图片，而是触发下载：
 - 原因：`xdg-open` 默认调用了浏览器或下载工具，而非图片查看器。
-- 解决方案：  
-  安装 feh 或 eog，feh 更轻量。
+- 解决方案：安装 feh 或 eog，feh 更轻量。
   ```shell
   sudo apt install feh  # 安装 feh（轻量图片查看器）
   feh test.jpg          # 用 feh 打开图片
