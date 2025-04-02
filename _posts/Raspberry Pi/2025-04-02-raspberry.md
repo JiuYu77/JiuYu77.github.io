@@ -178,13 +178,13 @@ echo $DISPLAY
 如果 `xdg-open test.jpg` 不显示图片，而是触发下载：
 - 原因：`xdg-open` 默认调用了浏览器或下载工具，而非图片查看器。
 - 解决方案：安装 feh 或 eog，feh 更轻量。  
-  ```shell
-  sudo apt install feh  # 安装 feh（轻量图片查看器）
-  feh test.jpg          # 用 feh 打开图片
+   ```shell
+   sudo apt install feh  # 安装 feh（轻量图片查看器）
+   feh test.jpg          # 用 feh 打开图片
 
-  sudo apt install eog  # 安装 eog
-  eog test.jpg
-  ```
+   sudo apt install eog  # 安装 eog
+   eog test.jpg
+   ```
   - 如果 `feh` 能显示，说明 `xdg-open` 配置错误，可以修改默认程序：
     ```shell
     xdg-mime default feh.desktop image/jpeg
@@ -225,7 +225,6 @@ sudo vim /etc/ssh/sshd_config
 ls -la ~/.Xauthority
 ```
 - 确保当前用户有读写权限（`-rw-------`）。
-
 - 如果权限不对，修复：
 ```
 chmod 600 ~/.Xauthority
@@ -236,7 +235,6 @@ chmod 600 ~/.Xauthority
 xhost +
 ```
 - **（注意：这会降低安全性，仅用于测试）**
-
 - 然后再尝试运行目标程序。
 
 ### 替代方案
