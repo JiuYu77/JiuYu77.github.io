@@ -182,7 +182,6 @@ echo $DISPLAY
     ```shell
     sudo apt install feh  # 安装 feh（轻量图片查看器）
     feh test.jpg          # 用 feh 打开图片
-
     sudo apt install eog  # 安装 eog
     eog test.jpg
     ```
