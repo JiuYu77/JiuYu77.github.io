@@ -147,9 +147,7 @@ ssh 连接到服务器（树莓派），执行以下命令：
 ```shell
 echo $DISPLAY
 ```
-
 - 正常应输出 localhost:10.0 或类似值。
-
 - 如果为空，手动设置：
   ```shell
   export DISPLAY=localhost:10.0
@@ -157,7 +155,6 @@ echo $DISPLAY
 
 2. 测试简单GUI程序  
 - 对于GUI程序`xclock`、`xeyes`，若能转发其界面，说明 X11 基本功能正常。
-
 - 若未安装上述程序，则使用如下命令安装：
   ```shell
   sudo apt install x11-apps
@@ -180,7 +177,7 @@ echo $DISPLAY
 2. xdg-open 调用错误  
 如果 `xdg-open test.jpg` 不显示图片，而是触发下载：
 - 原因：`xdg-open` 默认调用了浏览器或下载工具，而非图片查看器。
-- 解决方案：安装 feh 或 eog，feh 更轻量。
+- 解决方案：安装 feh 或 eog，feh 更轻量。  
   ```shell
   sudo apt install feh  # 安装 feh（轻量图片查看器）
   feh test.jpg          # 用 feh 打开图片
@@ -193,6 +190,7 @@ echo $DISPLAY
     xdg-mime default feh.desktop image/jpeg
     xdg-mime default feh.desktop image/png
     ```
+
 3. 程序自身限制（如 Firefox）  
 某些程序（如 `firefox`）可能默认禁用远程 X11：
 - 尝试强制允许 X11 转发：
