@@ -111,7 +111,12 @@ sudo libcamera-hello -t 0 --camera 0
 
 ### MobaXterm打开图片
 
-MobaXterm打开图片报错：
+```shell
+xdg-open test.jpg
+open test.jpg
+```
+
+MobaXterm打开图片`报错`：
 ![](/common/img/raspberryPi/Peas-notFound.png)
 
 解决方案是，安装Peas：
@@ -120,13 +125,12 @@ sudo apt install libpeas-dev
 ```
 ![](/common/img/raspberryPi/Peas-install.png)
 
-MobaXterm打开图片，不显示。
 
-### MobaXterm X11-Forwarding不显示图像
+## MobaXterm X11-Forwarding不显示图像
 
 MobaXterm ssh连接 树莓派5 后，使用`xdg-open` 或 `open`等命令打开图片，不显示图像。
 
-#### 检测MobaXterm 是否开启 X11转发
+### 检测MobaXterm 是否开启 X11转发
 
 - 右键，选择 Edit session。
 ![](/common/img/MobaXterm/right-click.png)
@@ -136,7 +140,7 @@ MobaXterm ssh连接 树莓派5 后，使用`xdg-open` 或 `open`等命令打开�
 
 - 点击 **OK** / **Cancel** / **X**，以关闭窗口。
 
-#### 检查服务器 基础 X11 转发是否正常
+### 检查服务器 基础 X11 转发是否正常
 
 1. 验证 DISPLAY 变量  
 ssh 连接到服务器（树莓派），执行以下命令：
@@ -159,7 +163,7 @@ echo $DISPLAY
   sudo apt install x11-apps
   ```
 
-#### 排查其他 GUI 程序无法显示的原因
+### 排查其他 GUI 程序无法显示的原因
 
 1. 缺少 GUI 依赖库  
 - 某些程序（如 gedit、firefox）需要额外的 GTK/Qt 库：
@@ -202,7 +206,8 @@ echo $DISPLAY
     chromium-browser --no-sandbox
     ```
 
-#### 检查 SSH 服务端配置
+### 检查 SSH 服务端配置
+
 确保树莓派的 `/etc/ssh/sshd_config` 允许 X11 转发：
 ```shell
 sudo vim /etc/ssh/sshd_config
@@ -216,7 +221,7 @@ sudo vim /etc/ssh/sshd_config
   sudo systemctl restart ssh
   ```
 
-#### 检查 X11 权限问题
+### 检查 X11 权限问题
 
 1. ~/.Xauthority 权限
 ```shell
@@ -237,7 +242,7 @@ xhost +
 
 - 然后再尝试运行目标程序。
 
-#### 替代方案
+### 替代方案
 
 1. 使用 VNC 远程桌面
 如果 X11 转发不稳定，改用 VNC：
