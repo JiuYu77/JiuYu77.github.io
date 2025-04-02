@@ -45,15 +45,30 @@ sudo vim.tiny /boot/firmware/config.txt
 ### 使用摄像头
 
 ```shell
+rpicam-hello  # 约5秒的预览窗口
 rpicam-hello -t 0  # 一直开启
-rpicam-hello -t 10s  # 开启10秒
+rpicam-hello -t 1000  # 1000毫秒
+rpicam-hello -t 10s   # 开启10秒
 rpicam-hello -t 10s --camera 0  # 指定使用的摄像头，从0开始编号。若只有一个摄像头，那它的编号就为0
+
 libcamera-hello -t 0 --camera 0  # libcamera-hello命令也可以
 ```
 
-下面的命令拍摄5秒左右的预览串口，然后拍摄一张全像素的jpeg图像，保存为test.jpg：
+下面的命令开启5秒左右的预览窗口，然后拍摄一张全像素的jpeg图像，保存为test.jpg：
 ```shell
+rpicam-jpeg -o test.jpg
 libcamera-jpeg -o test.jpg
+```
+
+设置图像分辨率 和 浏览显示时间：
+```shell
+rpicam-jpeg -o test.jpg -t 2000 --width 640 --height 480
+```
+
+捕获（拍摄）视频：
+```shell
+rpicam-vid -t 10s -o test.h264  # 拍摄10秒视频，保存为文件test.h264
+rpicam-vid -t 10s -o test.mp4   # 拍摄10秒视频，保存为文件test.mp4
 ```
 
 运行命令时，若出现错误:
