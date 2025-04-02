@@ -103,7 +103,7 @@ rpicam-still -e yuv420 -o test.data
 
 ![](/common/img/raspberryPi/rpicam-fd.png)
 
-可能是权限不足，可使用sudo:
+可能是权限不足，可使用sudo，如:
 ```shell
 sudo rpicam-hello -t 0
 sudo libcamera-hello -t 0 --camera 0
