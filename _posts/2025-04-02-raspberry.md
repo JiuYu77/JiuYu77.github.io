@@ -3,9 +3,7 @@ title: 树莓派5 使用 imx219摄像头
 description: 树莓派5，77° imx219摄像头。
 author: yu
 date: 2025-04-02 11:32:48 +0800
-categories:
-  - [Blogging, 树莓派]
-  - [Linux, 树莓派]
+categories: [[Blogging, 树莓派], [Linux, 树莓派]]
 tags: [Raspberry Pi, apt]
 ---
 
