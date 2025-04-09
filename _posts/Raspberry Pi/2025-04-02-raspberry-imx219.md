@@ -17,6 +17,8 @@ tags: [Raspberry Pi, apt]
 ![](/common/img/raspberryPi/connect-imx219.jpg)
 _Raspberry Pi 5 与 imx219 连接示意图_
 
+**注意**：一定要连接完好，接口处保持水平，不要倾斜。
+
 ### 配置
 
 打开文件`/boot/config.txt`
