@@ -124,6 +124,8 @@ MobaXterm打开图片`报错`：
 解决方案是，安装Peas：
 ```shell
 sudo apt install libpeas-dev
+# 如果有 安装失败/找不到 的软件，则执行以下命令，然后再次执行以上命令
+sudo apt update
 ```
 ![](/common/img/raspberryPi/Peas-install.png)
 
