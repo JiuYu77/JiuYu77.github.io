@@ -94,6 +94,7 @@ public:
             std::unique_lock<std::mutex> lock(m_mutex);
             m_tasks.emplace(task);
         }
+        m_condition.notify_one();
     }
 };
 ```
