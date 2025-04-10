@@ -200,7 +200,7 @@ lsmod | grep hailo_pci
 ```shell
 nk@raspberrypi:~ $ lsmod | grep hailo_pci
 hailo_pci             131072  0
-nk@raspberrypi:~ $
+nk@raspberrypi:~ $ 
 ```
 
 ## Demo
