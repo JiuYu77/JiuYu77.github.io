@@ -64,7 +64,7 @@ rpicam-still -t 0
 libcamera-hello -t 0 --camera 0  # libcamera-hello命令也可以
 ```
 
-下面的命令开启5秒左右的预览窗口，然后拍摄一张全像素的jpeg图像，保存为test.jpg：
+下面的命令开启5秒左右的 预览窗口(preview window)，然后拍摄一张全像素的jpeg图像，保存为test.jpg：
 ```shell
 rpicam-jpeg -o test.jpg
 
