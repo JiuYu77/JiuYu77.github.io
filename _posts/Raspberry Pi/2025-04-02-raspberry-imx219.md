@@ -5,6 +5,9 @@ author: yu
 date: 2025-04-02 11:32:48 +0800
 categories: [Blogging, 树莓派]
 tags: [Raspberry Pi, apt]
+image:
+  path: https://assets.raspberrypi.com/static/8f6eca535dbb23a21eb41a748050e3a0/33b96/16gb.webp
+  alt: Raspberry Pi 5
 ---
 
 ## 安装imx219
