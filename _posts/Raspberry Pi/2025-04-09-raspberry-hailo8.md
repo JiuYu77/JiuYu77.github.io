@@ -9,7 +9,7 @@ tags: [Raspberry Pi, apt, Hailo-8]
 
 ## 简介
 
-Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理器(NPU，Neural network Processing Unit)，是一款AI加速器(AI Accelerator)，它专为低功耗、高效率的深度学习推理任务设计。
+Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理器、NPU(Neural Processing Unit)、AI加速器(AI Accelerator)，它专为低功耗、高效率的深度学习推理任务设计。
 
 - `Hailo-8 AI Accelerator`，官网描述摘录（截至2025-04-09）：The `Hailo-8 edge AI processor`, featuring up to 26 tera-operations per second (TOPS), significantly outperforms all other edge processors. 
 - `Hailo-8L Entry-Level AI Accelerator`，官网描述摘录（截至2025-04-09）：The `Hailo-8L Entry-Level AI Accelerator`, featuring up to 13 tera-operations per second (TOPS), is designed to support entry level products requiring limited AI capacity or lower performance.
@@ -27,13 +27,15 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
 
 [**树莓派-hailo官方文档 AI Kit and AI HAT+ software**](https://www.raspberrypi.com/documentation/computers/ai.html)
 
-本文`树莓派5`使用的系统：**`Raspberry Pi OS (64-bit)`**。默认软件源：
+本文`树莓派5`使用的系统：**`Raspberry Pi OS (64-bit)`**。软件源为默认软件源（没有修改过）：
 ![](/common/img/raspberryPi/Hailo-8/sources.list.png)
 */etc/apt/sources.list*
 ![](/common/img/raspberryPi/Hailo-8/sources.list.d-raspi.list.png)
 */etc/apt/sources.list.d/raspi.list*
 
-是否修改了软件源：**否**。
+本文Hailo-8套件主要包括： PCIe TO M.2 HAT+、Hailo-8、带状电缆、GPIO堆叠接头(GPIO stacking header)、其他固定器件。
+
+本文PCIe即pcie。
 
 ## 安装摄像头
 
@@ -63,7 +65,7 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
     ```shell
     sudo rpi-eeprom-update -a
     ```
-- 重启`sudo reboot`或者直接 关闭`sudo poweroff`。
+- 重启`sudo reboot` 或者 直接关闭`sudo poweroff`。
 3. 断开树莓派电源。
 4. 将 hailo-8 安装到树莓派上。
    - 注意 pcie 带状电缆(ribbon cable) 是`分正反`的，下面如果出现问题，可以尝试将带状电缆两头对调。
@@ -71,13 +73,13 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
 
 ## 驱动&固件安装
 
-0. 开启 PCIe Gen 3.0（可选）  
+1. 开启 PCIe Gen 3.0（可选）  
 要启用PCIe Gen 3.0速度，请将以下行添加到`/boot/firmware/config.txt`的最下面：
     ```
     dtparam=pciex1_gen=3
     ```
     使用`sudo reboot`重新启动Raspberry Pi以使这些设置生效。
-1. 安装使用NPU所需的依赖项。从终端窗口运行以下命令：
+2. 安装使用NPU所需的依赖项。从终端窗口运行以下命令：
     ```shell
     sudo apt install hailo-all
     ```
@@ -88,9 +90,9 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
 
     - Hailo Tappas core post-processing libraries
 
-    - The rpicam-apps Hailo post-processing software demo stages
-2. 使用`sudo reboot`重新启动Raspberry Pi，以使这些设置生效。
-3. 要确保一切正常运行，请运行以下命令：
+    - The `rpicam-apps` Hailo post-processing software demo stages
+3. 使用`sudo reboot`重新启动Raspberry Pi，以使这些设置生效。
+4. 要确保一切正常运行，请运行以下命令：
     ```shell
     hailortcli fw-control identify
     ```
@@ -107,7 +109,7 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
     Part Number: HM218B1C2FAE
     Product Name: HAILO-8 AI ACC M.2 M KEY MODULE EXT TEMP
     ```
-    此外，您还可以检查内核日志，确定是否成功：
+    此外，您还可以通过`dmesg`检查内核日志，确定是否成功：
     ```shell
     dmesg | grep -i hailo
     ```
@@ -161,9 +163,17 @@ lspci -v | grep -i hailo
 ```
 确认 PCIe 设备已被系统识别（**需 Hailo 硬件已正确插入**，尤其注意`带状电缆`）。
 
-## 关于 hailo PCIe 驱动（若有需要可使用）
+若识别到 PCIe设备（HAT+ 和 Hailo-8），会出现类似输出：
+```shell
+nk@raspberrypi:~ $ lspci -v | grep -i hailo
+0001:01:00.0 Co-processor: Hailo Technologies Ltd. Hailo-8 AI Processor (rev 01)
+        Subsystem: Hailo Technologies Ltd. Hailo-8 AI Processor
+        Kernel driver in use: hailo
+        Kernel modules: hailo_pci
+nk@raspberrypi:~ $
+```
 
-本文PCIe即pcie。
+## 关于 hailo PCIe 驱动（若有需要可使用）
 
 ### 驱动 加载&卸载
 
@@ -186,7 +196,12 @@ lspci -v | grep -i hailo
 ```shell
 lsmod | grep hailo_pci
 ```
-若输出中包含 hailo_pci，则驱动已加载。
+若输出中包含 hailo_pci，则驱动已加载，如：
+```shell
+nk@raspberrypi:~ $ lsmod | grep hailo_pci
+hailo_pci             131072  0
+nk@raspberrypi:~ $
+```
 
 ## Demo
 
