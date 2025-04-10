@@ -53,13 +53,13 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
     sudo rpi-eeprom-update
     ```
     ![](/common/img/raspberryPi/Hailo-8/rpi-eeprom-update.png)
-- 如果您看到2023年12月6日或更晚的日期，[请继续下一步](#section1)，上图时间为`2025-03-10`直接跳过此步。  
+- 如果您看到2023年12月6日或更晚的日期，请继续下一步（**运行以下命令将固件更新到最新版本：**），上图时间为`2025-03-10`直接跳过此步。  
 如果您看到的日期早于2023年12月6日，请运行以下命令以打开Raspberry Pi Configuration CLI：
     ```shell
     sudo raspi-config
     ```
     依次选择 `Advanced Options` > `Bootloader Version`，选择 `Latest`。然后， 通过 `Finish` 或 `Escape 按键` 退出`raspi-config`。
-- 运行以下命令将固件更新到最新版本 <a id="section1"></a>：
+- 运行以下命令将固件更新到最新版本：
     ```shell
     sudo rpi-eeprom-update -a
     ```
