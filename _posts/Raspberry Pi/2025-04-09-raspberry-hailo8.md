@@ -4,7 +4,7 @@ description: 树莓派5，Hailo-8，NPU。
 author: yu
 date: 2025-04-09 22:01:48 +0800
 categories: [Blogging, 树莓派]
-tags: [Raspberry Pi, apt]
+tags: [Raspberry Pi, apt, Hailo-8]
 ---
 
 ## 简介
@@ -25,12 +25,19 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
  NPU，Neural Processing Unit，神经（网络）处理单元  
 {: .prompt-tip }
 
-
 [**树莓派-hailo官方文档 AI Kit and AI HAT+ software**](https://www.raspberrypi.com/documentation/computers/ai.html)
 
-本文`树莓派5`使用的系统：**`Raspberry Pi OS (64-bit)`** 。
+本文`树莓派5`使用的系统：**`Raspberry Pi OS (64-bit)`**。默认软件源：
+![](/common/img/raspberryPi/Hailo-8/sources.list.png)
+*/etc/apt/sources.list*
+![](/common/img/raspberryPi/Hailo-8/sources.list.d-raspi.list.png)
+*/etc/apt/sources.list.d/raspi.list*
 
 是否修改了软件源：**否**。
+
+## 安装摄像头
+
+安装摄像头用于测试 `Hailo-8` NPU，可参考[树莓派5使用imx219摄像头](https://jiuyu77.github.io/posts/raspberry-imx219/)（也许会有帮助）。
 
 ## 硬件连接
 
@@ -38,12 +45,16 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
     ```shell
     sudo apt update && sudo apt full-upgrade
     ```
+    下图最后一行，选择`Y`：
+    ![](/common/img/raspberryPi/Hailo-8/apt-update-upgrade.png)
 2. 接下来，确保您的树莓派固件(Raspberry Pi firmware)是最新的。
 - 运行以下命令以查看您正在运行的固件：
     ```shell
     sudo rpi-eeprom-update
     ```
-- 如果您看到2023年12月6日或更晚的日期，[请继续下一步](#section1)。如果您看到的日期早于2023年12月6日，请运行以下命令以打开Raspberry Pi Configuration CLI：
+    ![](/common/img/raspberryPi/Hailo-8/rpi-eeprom-update.png)
+- 如果您看到2023年12月6日或更晚的日期，[请继续下一步](#section1)，上图时间为`2025-03-10`直接跳过此步。  
+如果您看到的日期早于2023年12月6日，请运行以下命令以打开Raspberry Pi Configuration CLI：
     ```shell
     sudo raspi-config
     ```
@@ -55,11 +66,17 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
 - 重启`sudo reboot`或者直接 关闭`sudo poweroff`。
 3. 断开树莓派电源。
 4. 将 hailo-8 安装到树莓派上。
-   - 注意 pcie 带状电缆(ribbon cable)，下面如果出现问题，可以尝试将带状电缆两头对调。
+   - 注意 pcie 带状电缆(ribbon cable) 是`分正反`的，下面如果出现问题，可以尝试将带状电缆两头对调。
 5. 插上电源，开机。
 
 ## 驱动&固件安装
 
+0. 开启 PCIe Gen 3.0（可选）  
+要启用PCIe Gen 3.0速度，请将以下行添加到`/boot/firmware/config.txt`的最下面：
+    ```
+    dtparam=pciex1_gen=3
+    ```
+    使用`sudo reboot`重新启动Raspberry Pi以使这些设置生效。
 1. 安装使用NPU所需的依赖项。从终端窗口运行以下命令：
     ```shell
     sudo apt install hailo-all
