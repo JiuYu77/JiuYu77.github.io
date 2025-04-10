@@ -170,7 +170,7 @@ nk@raspberrypi:~ $ lspci -v | grep -i hailo
         Subsystem: Hailo Technologies Ltd. Hailo-8 AI Processor
         Kernel driver in use: hailo
         Kernel modules: hailo_pci
-nk@raspberrypi:~ $
+nk@raspberrypi:~ $ 
 ```
 
 ## 关于 hailo PCIe 驱动（若有需要可使用）
