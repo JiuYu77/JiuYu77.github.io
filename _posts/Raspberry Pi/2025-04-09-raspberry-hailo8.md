@@ -207,10 +207,27 @@ nk@raspberrypi:~ $
 
 相机应用程序的`rpicam-apps`套件实现了一个后处理框架。rpicam-apps包括多个应用程序：rpicam-hello、rpicam-jpeg、rpicam-raw、rpicam-still、rpicam-vid。
 
-通过 `rpicam-apps`自带的demo(示例) 测试 `Hailo-8人工智能加速器` 是否真的可用。
+本部分通过 `rpicam-apps`自带的demo(示例) 测试 `Hailo-8人工智能加速器` 是否真的可用。
 
 运行以下命令以安装最新的rpicam-apps软件包：
 ```shell
 sudo apt update && sudo apt install rpicam-apps
 ```
 
+### 目标检测
+
+这个演示显示了神经网络检测到的对象周围的边界框。要禁用取景器，请使用`-n`标志。要返回描述检测到的对象的纯文本输出，请添加`-v 2`选项。  
+要使用Yolov8模型运行演示，请运行以下命令：
+```shell
+rpicam-hello -t 0 --post-process-file /usr/share/rpi-camera-assets/hailo_yolov8_inference.json
+rpicam-jpeg -t 5s -o test.jpg --post-process-file /usr/share/rpi-camera-assets/hailo_yolov8_inference.json
+```
+
+若出现如下错误，记得在命令前加`sudo`：
+```shell
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  failed to import fd 29
+Aborted
+```
+
+**更多内容请查看树莓派官方文档。**
