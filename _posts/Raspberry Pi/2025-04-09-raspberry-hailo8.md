@@ -59,7 +59,7 @@ Hailo-8，是由以色列公司 Hailo 开发的一款高性能边缘 AI 处理�
     sudo raspi-config
     ```
     依次选择 `Advanced Options` > `Bootloader Version`，选择 `Latest`。然后， 通过 `Finish` 或 `Escape 按键` 退出`raspi-config`。
-- 运行以下命令将固件更新到最新版本<a id="section1"></a>：
+- 运行以下命令将固件更新到最新版本 <a id="section1"></a>：
     ```shell
     sudo rpi-eeprom-update -a
     ```
