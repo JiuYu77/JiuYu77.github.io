@@ -20,11 +20,18 @@ tags: [AI, PyTorch]
 
 #### `model`（要导出的模型）
 - **作用**：传入 PyTorch 模型（nn.Module 实例）。
+- **是否需要设为 eval()模式**：
+  - 模型含 Dropout/BatchNorm：通常模型必须处于 `eval()模式(评估/推理模式)`，避免 Dropout/BatchNorm 影响，确保推理行为正确。
+  - 纯无状态模型（如 Linear+ReLU）：可选，不影响计算逻辑。
+  - 特殊-需导出训练逻辑：不能使用 eval()，以保留训练行为。
+    - 设置 model.train()。
+    - 在 torch.onnx.export 中指定 training=TrainingMode.TRAINING。
 - **示例**：
   ```python
   weight = "best.pt"  # 训练好的模型（模型参数文件）
   model = MyModel(weight=weight)
-  # model.eval()  # 可选，设置为 eval 模式（避免 Dropout/BatchNorm 影响）
+  # model.eval()  # 可选，根据实际情况
+  # model.train()  # 可选，根据实际情况
   ```
 
 #### `args`（模型输入示例）
@@ -133,7 +140,7 @@ tags: [AI, PyTorch]
 import torch
 from model import MyModel
 
-# 1. 加载预训练模型并设置为eval模式
+# 1. 加载预训练模型并设置为 eval模式
 weight = "./best_params.pt"
 device = "cuda:0"
 
