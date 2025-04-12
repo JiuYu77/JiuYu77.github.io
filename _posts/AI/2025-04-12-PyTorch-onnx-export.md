@@ -20,13 +20,11 @@ tags: [AI, PyTorch]
 
 #### `model`（要导出的模型）
 - **作用**：传入 PyTorch 模型（nn.Module 实例）。
-- **要求**：
-  - 模型必须处于 eval() 模式（避免 Dropout/BatchNorm 影响）。
 - **示例**：
   ```python
   weight = "best.pt"  # 训练好的模型（模型参数文件）
   model = MyModel(weight=weight)
-  model.eval()  # 必须设置为 eval 模式
+  # model.eval()  # 可选，设置为 eval 模式（避免 Dropout/BatchNorm 影响）
   ```
 
 #### `args`（模型输入示例）
