@@ -3,7 +3,7 @@ title: PyTorch模型导出为ONNX格式
 description: 利用torch.onnx.export，将PyTorch模型导出为.onnx格式。
 author: yu
 date: 2025-04-12 20:42:32 +0800
-categories: [AI， PyTorch]
+categories: [AI, PyTorch]
 tags: [AI, PyTorch]
 ---
 
