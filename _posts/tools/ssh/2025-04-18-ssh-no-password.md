@@ -23,7 +23,7 @@ scp id_rsa.pub 用户名@hostname:~/.ssh/id_rsa2.pub
 ## 追加
 
 登录到服务器，将上传到服务器的本地公钥，追加到服务器的`authorized_keys`文件：
-``shell
+```shell
 cd ~/.ssh
 cat id_rsa2.pub >> authorized_keys
-``
+```
