@@ -9,7 +9,7 @@ tags: [SSH]
 
 ## 生成SSH密钥对
 
-[生成密钥对](https://jiuyu77.github.io/posts/ssh-no-password/)
+[生成密钥对](https://jiuyu77.github.io/posts/ssh-key/#%E7%94%9F%E6%88%90ssh%E5%AF%86%E9%92%A5%E5%AF%B9)
 
 ## 上传
 
