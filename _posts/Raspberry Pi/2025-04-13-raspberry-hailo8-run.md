@@ -75,12 +75,16 @@ pip uninstall hailo-dataflow-compiler
 ```
 
 
-### 编译模型
+### onnx转为hef
+
+#### onnx转为hef
 
 har 输入形状：[N, C] 或 [N, H, W, C]
 hef
 
-**DNN library is not found.**
+#### 可能遇到的问题
+
+1. **DNN library is not found.**
 ```python
 import tensorflow as tf
 
@@ -89,7 +93,7 @@ print(build['cuda_version'])  # 查看cuda版本，如11.8
 print(build['cudnn_version'])  # 查看cudnn版本，如8
 ```
 
-安装cuda：
+若没有cuda，需要安装：
 ```bash
 sudo apt install cuda
 ```
@@ -99,12 +103,8 @@ sudo apt install cuda
 sudo apt install libcudnn8 libcudnn8-dev
 ```
 
-Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory
-```bash
-# 查找 libcublasLt.so.12 的路径
-find /usr/local/cuda -name "libcublasLt.so.12"
-# 假设找到的路径为 /usr/local/cuda/lib64/libcublasLt.so.12
-```
+2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory
 
-## 在Hailo设备上运行
+
+## 在Hailo设备上部署运行
 
