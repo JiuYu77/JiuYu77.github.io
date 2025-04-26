@@ -89,7 +89,7 @@ hef
 
 #### 可能遇到的问题
 
-1. **DNN library is not found.**  
+1. **DNN library is not found**.  
 Python查看 tensorflow 信息：
 ```python
 import tensorflow as tf
