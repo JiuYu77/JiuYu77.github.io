@@ -91,7 +91,7 @@ hef
 
 1. DNN library is not found  
 Python查看 tensorflow 信息：
-```python
+```shell
 import tensorflow as tf
 
 build = tf.sysconfig.get_build_info()
