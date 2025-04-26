@@ -103,8 +103,7 @@ print(build['cudnn_version'])  # 查看 tensorflow 使用的cudnn版本，如8
 sudo apt install libcudnn8 libcudnn8-dev
 ```
 
-2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory
-
+2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory  
 已安装的 Hailo Dataflow Compiler 版本，需要的 `libcublas` 库版本不满足。
 ```shell
 apt search libcublas  # 查看cublas版本
