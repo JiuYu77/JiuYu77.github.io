@@ -89,23 +89,19 @@ hef
 
 #### 可能遇到的问题
 
-1. **DNN library is not found.**
-
+1. **DNN library is not found.**  
 ```python
 import tensorflow as tf
 
 build = tf.sysconfig.get_build_info()
-print(build['cuda_version'])  # 查看cuda版本，如11.8
-print(build['cudnn_version'])  # 查看cudnn版本，如8
+print(build['cuda_version'])   # 查看 tensorflow 使用的cuda版本，如11.8
+print(build['cudnn_version'])  # 查看 tensorflow 使用的cudnn版本，如8
 ```
-
-若没有cuda，则需要安装，官网下载安装 或 命令行apt安装。
-
-安装cudnn，以cudnn8为例：
+若没有cuda，则需要安装，官网下载安装 或 命令行apt安装，不需要与tensorflow 使用的cuda版本 严格一致。  
+若没有cudnn，则需要安装，官网下载安装 或 命令行apt安装，以cudnn8为例：
 ```bash
 sudo apt install libcudnn8 libcudnn8-dev
 ```
-
 2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory
 
 已安装的 Hailo Dataflow Compiler 版本，需要的 `libcublas` 库版本不满足。
@@ -113,7 +109,6 @@ sudo apt install libcudnn8 libcudnn8-dev
 apt search libcublas  # 查看cublas版本
 sudo apt install libcublas-dev-12-8
 ```
-
 
 ## 在Hailo设备上部署运行
 
