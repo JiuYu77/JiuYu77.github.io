@@ -91,9 +91,8 @@ hef
 
 1. DNN library is not found  
 Python查看 tensorflow 信息：
-```shell
+```python
 import tensorflow as tf
-
 build = tf.sysconfig.get_build_info()
 print(build['cuda_version'])   # 查看 tensorflow 使用的cuda版本，如11.8
 print(build['cudnn_version'])  # 查看 tensorflow 使用的cudnn版本，如8
