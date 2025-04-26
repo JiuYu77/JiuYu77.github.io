@@ -51,7 +51,7 @@ conda deactivate  # 退出虚拟环境
 
 ### 安装Hailo DFC
 
-为了将自定义模型编译为 `.hef` 模型，需要安装 **Hailo Dataflow Compiler**（DFC） 工具。登录 Hailo 的网站 <a href="https://hailo.ai/developer-zone/software-downloads">https://hailo.ai/developer-zone/software-downloads</a>，找到对应 Python 版本的 `.whl` 文件，并下载。
+为了将自定义模型编译为 `.hef` 模型，需要安装 **Hailo Dataflow Compiler**（DFC） 工具。登录 Hailo 的网站 <a href="https://hailo.ai/developer-zone/software-downloads" target="_blank">https://hailo.ai/developer-zone/software-downloads</a>，找到对应 Python 版本的 `.whl` 文件，并下载。
 
 
 Latest release（最新版本）、Archive（存档）。
@@ -90,8 +90,9 @@ hef
 #### 可能遇到的问题
 
 1. **DNN library is not found**.  
-Python查看 tensorflow 信息：
 ```python
+# Python查看 tensorflow 信息
+
 import tensorflow as tf
 
 build = tf.sysconfig.get_build_info()
