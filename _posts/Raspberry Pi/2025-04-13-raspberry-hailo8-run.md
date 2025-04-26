@@ -18,7 +18,7 @@ image:
    - 将训练好的PyTorch模型导出为ONNX格式（.onnx文件）
 2. 模型转换
    - 将ONNX模型转为Hailo可执行的格式(.hef)
-   - 这个步骤通常通过Hailo的Model Zoo或Dataflow Compiler完成
+   - 这个步骤通常通过Hailo的 `Dataflow Compiler` 或 Model Zoo完成
 3. 部署运行
    - 将生成的.hef文件部署到Hailo设备上
    - 使用Hailo的运行时库在设备上执行推理
@@ -29,8 +29,82 @@ image:
 
 请参考：[PyTorch模型导出为ONNX格式](https://jiuyu77.github.io/posts/PyTorch-onnx-export/)
 
-## 使用Hailo工具链转换
+## onnx转为hef
 
+### 创建虚拟环境（可选）
+
+为了避免与系统环境冲突，建议创建一个虚拟环境来运行Hailo相关工具，以下两种方式选择一个即可。
+
+1. 使用Python自带的 `venv` 模块创建虚拟环境：
+```bash
+python3 -m venv hailo_env  # 创建虚拟环境
+source hailo_env/bin/activate  # 激活虚拟环境
+deactivate  # 退出虚拟环境
+```
+
+2. 使用Anaconda创建虚拟环境：
+```bash
+conda create -n hailo_env python=3.10  # 创建虚拟环境
+conda activate hailo_env  # 激活虚拟环境
+conda deactivate  # 退出虚拟环境
+```
+
+### 安装Hailo DFC
+
+为了将自定义模型编译为 `.hef` 模型，需要安装 **Hailo Dataflow Compiler**（DFC） 工具。登录 Hailo 的网站 https://hailo.ai/developer-zone/software-downloads ，找到对应 Python 版本的 `.whl` 文件，并下载。
+![](/common/posts/hailo/hailo-Dataflow-Compiler.png)
+
+安装 graphviz 库：
+```bash
+sudo apt install libgraphviz-dev
+```
+
+安装 Hailo Dataflow Compiler Python包：
+```bash
+pip install hailo_dataflow_compiler-3.31.0-py3-none-linux_x86_64.whl
+```
+
+卸载 Hailo Dataflow Compiler Python包：
+```bash
+# 找到 Hailo Dataflow Compiler的包名
+pip list  # 查看已安装的包
+pip list | grep hailo  # 查找包含 hailo 的包
+
+# 卸载 Hailo Dataflow Compiler包
+pip uninstall hailo-dataflow-compiler
+```
+
+
+### 编译模型
+
+har 输入形状：[N, C] 或 [N, H, W, C]
+hef
+
+**DNN library is not found.**
+```python
+import tensorflow as tf
+
+build = tf.sysconfig.get_build_info()
+print(build['cuda_version'])  # 查看cuda版本，如11.8
+print(build['cudnn_version'])  # 查看cudnn版本，如8
+```
+
+安装cuda：
+```bash
+sudo apt install cuda
+```
+
+安装cudnn，以cudnn8为例：
+```bash
+sudo apt install libcudnn8 libcudnn8-dev
+```
+
+Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory
+```bash
+# 查找 libcublasLt.so.12 的路径
+find /usr/local/cuda -name "libcublasLt.so.12"
+# 假设找到的路径为 /usr/local/cuda/lib64/libcublasLt.so.12
+```
 
 ## 在Hailo设备上运行
 
