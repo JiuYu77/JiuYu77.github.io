@@ -51,7 +51,11 @@ conda deactivate  # 退出虚拟环境
 
 ### 安装Hailo DFC
 
-为了将自定义模型编译为 `.hef` 模型，需要安装 **Hailo Dataflow Compiler**（DFC） 工具。登录 Hailo 的网站 https://hailo.ai/developer-zone/software-downloads ，找到对应 Python 版本的 `.whl` 文件，并下载。
+为了将自定义模型编译为 `.hef` 模型，需要安装 **Hailo Dataflow Compiler**（DFC） 工具。登录 Hailo 的网站 <a href="https://hailo.ai/developer-zone/software-downloads">https://hailo.ai/developer-zone/software-downloads</a>，找到对应 Python 版本的 `.whl` 文件，并下载。
+
+
+Latest release（最新版本）、Archive（存档）。
+
 ![](/common/posts/hailo/hailo-Dataflow-Compiler.png)
 
 安装 graphviz 库：
@@ -103,6 +107,8 @@ sudo apt install libcudnn8 libcudnn8-dev
 ```
 
 2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory
+
+已安装的 Hailo Dataflow Compiler 版本，需要的 `libcublas` 库版本不满足。
 ```shell
 apt search libcublas  # 查看cublas版本
 sudo apt install libcublas-dev-12-8
