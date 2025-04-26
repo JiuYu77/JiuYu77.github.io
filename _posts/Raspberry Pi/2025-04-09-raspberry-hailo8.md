@@ -1,5 +1,5 @@
 ---
-title: 树莓派5 使用 Hailo-8
+title: 树莓派5 安装 Hailo-8
 description: 树莓派5，Hailo-8，NPU。
 author: yu
 date: 2025-04-09 22:01:48 +0800
