@@ -104,7 +104,7 @@ sudo apt install libcudnn8 libcudnn8-dev
 ```
 
 2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory  
-已安装的 Hailo Dataflow Compiler 版本，需要的 `libcublas` 库版本不满足。
+已安装的 Hailo Dataflow Compiler 版本，需要的 `libcublas` 库版本不满足。解决方法：重新安装 cuda 或 Hailo Dataflow Compiler，升高/降低 版本。
 ```shell
 apt search libcublas  # 查看cublas版本
 sudo apt install libcublas-dev-12-8
