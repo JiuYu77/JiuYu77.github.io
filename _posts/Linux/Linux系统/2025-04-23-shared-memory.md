@@ -24,6 +24,12 @@ tags: [Linux]
 
 ## 共享内存相关命令
 
+### System V 共享内存
+
+由内核的 IPC 子系统管理，通过 shmget 创建，shmat 映射。
+
+资源信息存储在 /proc/sysvipc/shm 中，由 ipcs -m 解析并显示。
+
 ipcs: 查看共享内存
 ```bash
 ipcs -m
@@ -34,6 +40,36 @@ ipcrm: 删除共享内存
 ipcrm -m shmid
 ipcrm -M shmkey
 ```
+
+自动清理：系统重启后会清空共享内存。
+
+### POSIX 共享内存
+
+通过挂载在 `/dev/shm` 的 虚拟文件系统（tmpfs）实现，shm_open 本质上创建了一个内存文件。
+
+共享内存对象表现为文件（如 /dev/shm/my_shm），而非传统的 IPC 资源。
+
+OSIX 共享内存对象会以文件形式出现在 `/dev/shm` 目录中。
+
+通过文件系统查看
+```shell
+ls -l /dev/shm
+```
+通过 `lsof` 查看占用进程
+```shell
+lsof /dev/shm/my_shm
+```
+通过 `fuser` 查看进程
+```shell
+fuser -v /dev/shm/my_shm
+```
+
+`rm` 手动删除
+```shell
+rm /dev/shm/my_shm  # 直接删除文件（需权限）
+```
+
+自动清理：系统重启后 /dev/shm 下的内容会被清空。
 
 ## 相关函数 - System V API
 
