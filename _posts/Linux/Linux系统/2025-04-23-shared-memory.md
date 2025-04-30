@@ -288,12 +288,17 @@ int main()
     *(p) = '-';
     p[1] = 'b';
     p[2] = 'c';
-    // 从共享内存读取数据
-    std::cout << p << std::endl;
-    strcpy(p, "hello");
-    std::cout << p << std::endl;
-    strncat(p, " world", shm_size-strlen(p)-1);
-    std::cout << p << std::endl;
+    p[3] = '\0';  // 字符串结束符
+    std::cout << p << std::endl;  // 从共享内存读取数据
+
+    strcpy(p, "hello");  // 将字符串复制到共享内存
+    std::cout << p << std::endl;  // 从共享内存读取数据
+
+    strncat(p, " world", shm_size-strlen(p)-1);  // 将字符串追加到共享内存，第三个参数为 追加的最大长度，防止越界
+    std::cout << p << std::endl;  // 从共享内存读取数据
+
+    strncpy(p, "Hello World!", shm_size);  // 将字符串复制到共享内存，第三个参数为 复制的最大长度，防止越界
+    std::cout << p << std::endl;  // 从共享内存读取数据
 
     // 取消映射共享内存
     if(munmap(ptr, shm_size) == -1)
