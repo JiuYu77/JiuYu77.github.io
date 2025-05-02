@@ -1,0 +1,31 @@
+categories:
+  - name: 技术社区/网站
+    icon: 🌐
+    items:
+      - name: GitHub
+        url: https://github.com
+        icon: https://github.githubassets.com/favicons/favicon.svg
+        description: 基于Git的代码托管平台
+        tags: [开发, 开源]
+
+      - name: 稀土掘金
+        url: https://juejin.cn
+        icon: https://juejin.cn/favicon.ico
+        description: 中文开发者技术分享平台
+        tags: [博客, 社区]
+
+  - name: 工具软件
+    icon: 🛠️
+    items:
+      - name: Snipaste
+        url: https://www.snipaste.com
+        icon: https://juejin.cn/favicon.ico
+        description: 简洁强大的截图工具
+        tags: [工具]
+
+      - name: 7-Zip
+        url: https://www.7-zip.org
+        icon: https://juejin.cn/favicon.ico
+        description: 高压缩比开源压缩软件
+        tags: [工具]
+
