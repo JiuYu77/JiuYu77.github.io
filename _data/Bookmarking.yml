@@ -73,7 +73,7 @@ categories:
         tags: [工具]
 
       - name: 格式工厂
-        url: http://www.pcfreetime.com/formatfactory/
+        url: www.pcfreetime.com/formatfactory/
         icon: /common/img/icon/FormatFactory.png
         description: 免费多功能的多媒体文件转换工具
         tags: [工具]
@@ -236,7 +236,7 @@ categories:
     icon: 🎥
     items:
       - name: Branin's.Base
-        url: http://www.brainsbase.co.jp
+        url: www.brainsbase.co.jp
         icon: /common/img/icon/brainsbase.png
         description: 《夏目友人帐》系列<br>《我的青春恋爱物语果然有问题》
         tags: [动漫]
@@ -290,7 +290,7 @@ categories:
         tags: [动漫]
 
       - name: J.C.STAFF（节操社）
-        url: http://jcstaff.co.jp
+        url: jcstaff.co.jp
         icon: /common/img/icon/jcstaff.gif
         description: 《龙与虎》<br>《某科学的超电磁炮》
         tags: [动漫]
