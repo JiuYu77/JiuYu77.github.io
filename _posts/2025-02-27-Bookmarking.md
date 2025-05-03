@@ -23,7 +23,7 @@ pin: true
   border-left: 4px solid #6366f1;
   padding-left: 1rem;
   margin: 3rem 0 1.5rem;
-background: linear-gradient(90deg, rgba(99,102,241,0.1) 0%, transparent 100%);
+  background: linear-gradient(90deg, rgba(99,102,241,0.1) 0%, transparent 100%);
 }
 
 /* 卡片布局 */
@@ -85,15 +85,6 @@ background: linear-gradient(90deg, rgba(99,102,241,0.1) 0%, transparent 100%);
   text-decoration: underline;
 }
 
-.tag {
-  display: inline-block;
-  background: rgba(99,102,241,0.1);
-  color: #6366f1;
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
-  font-size: 0.9em;
-  margin: 0.2rem;
-}
 
 @media (prefers-color-scheme: dark) {
   .bookmark-card {
@@ -118,11 +109,6 @@ background: linear-gradient(90deg, rgba(99,102,241,0.1) 0%, transparent 100%);
             <div class="card-name">{{ item.name }}</div>
             <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <p class="card-desc">{{ item.description }}</p>
-            <div class="tags">
-			  {% for tag in item.tags %}
-			  <span class="tag">{{ tag }}</span>
-			  {% endfor %}
-            </div>
           </div>
         </a>
       </div>
