@@ -61,8 +61,8 @@ pin: true
 }
 
 .div-img{
-  max-width: 80px;
-  max-height: 50px;
+   width: 88px;  /* 容器宽度 */
+  aspect-ratio: 1 / 1; /* 强制宽高比1:1 */
 
   display: inline;
 }
