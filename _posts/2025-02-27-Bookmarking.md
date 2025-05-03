@@ -57,7 +57,7 @@ pin: true
 .card-name{
   color: rgb(114, 223, 186);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 2rem;
 }
 
 .div-img{
