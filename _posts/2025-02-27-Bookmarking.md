@@ -69,9 +69,11 @@ pin: true
   margin-bottom: 1rem;
 }
 .card-name{
+  grid-area: name;
   color: rgb(114, 223, 186);
   font-weight: 600;
   font-size: 1.5rem;
+  align-self: center;
 }
 
 .div-img{
