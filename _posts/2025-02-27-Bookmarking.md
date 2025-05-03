@@ -66,7 +66,9 @@ pin: true
 
 .card-link {
   color: #3b82f6;
+  text-decoration: none;
   display: block;
+  border: 1px solid red;
 }
 
 .card-link:hover {
@@ -101,7 +103,7 @@ pin: true
     <div class="card-grid">
       {% for item in category.items %}
       <div class="bookmark-card">
-        <a class="card-link" href="{{ item.url }}" target="_blank">
+        <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-header">
             <img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/>
             <h3 class="card-name">{{ item.name }}</h3>
