@@ -61,16 +61,14 @@ pin: true
 }
 
 .div-img{
-   width: 88px;  /* 容器宽度 */
-  aspect-ratio: 1 / 1; /* 强制宽高比1:1 */
+  max-width: 80px;
+  max-height: 50px;
 
   display: inline;
 }
 .favicon {
   width: 100%;
   height: 100%;
-  width: auto;
-  height: auto;
 
   border-radius: 6px;
 }
