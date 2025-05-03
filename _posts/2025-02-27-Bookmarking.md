@@ -57,7 +57,7 @@ pin: true
 .card-name{
   color: rgb(114, 223, 186);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .div-img{
@@ -67,8 +67,8 @@ pin: true
   display: inline;
 }
 .favicon {
-  max-width: 80px;
-  max-height: 50px;
+  width: 100%;
+  height: 100%;
   width: auto;
   height: auto;
 
