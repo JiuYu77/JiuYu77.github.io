@@ -94,9 +94,8 @@ pin: true
 }
 </style>
 
+{% for category in site.data.Bookmarking.categories %}
 <div class="bookmark-container">
-  {% for category in site.data.Bookmarking.categories %}
-  <section class="category-section">
     <h2 class="category-title">
       <span class="category-icon">{{ category.icon }}</span> {{ category.name }}
     </h2>
@@ -114,8 +113,7 @@ pin: true
       </div>
       {% endfor %}
     </div>
-  </section>
-  {% endfor %}
 </div>
+{% endfor %}
 
 
