@@ -102,8 +102,8 @@ pin: true
 
     <div class="card-grid">
       {% for item in category.items %}
-        <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
       <div class="bookmark-card">
+        <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-header">
             <h3 class="card-name">{{ item.name }}</h3>
             <img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/>
@@ -114,8 +114,8 @@ pin: true
 			<span class="tag">{{ tag }}</span>
 			{% endfor %}
           </div>
-      </div>
         </a>
+      </div>
       {% endfor %}
     </div>
   </section>
