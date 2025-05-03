@@ -88,7 +88,7 @@ pin: true
 }
 
 .card-desc{
-  position: absolute;
+  position: relative;
   left: 90px;
   top: 25px;
 }
