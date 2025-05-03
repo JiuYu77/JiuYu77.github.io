@@ -74,6 +74,8 @@ pin: true
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.3;
+
+  height: 80px;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -81,8 +83,8 @@ pin: true
 
 .div-img{
   grid-area: icon;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   aspect-ratio: 1/1;
   border-radius: 14px;
   padding: 12px;
