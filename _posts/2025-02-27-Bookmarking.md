@@ -101,13 +101,13 @@ pin: true
     <div class="card-grid">
       {% for item in category.items %}
       <div class="bookmark-card">
-          <div class="card-content">
         <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+          <div class="card-content">
             <div class="card-name">{{ item.name }}</div>
-        </a>
             <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <p class="card-desc">{{ item.description }}</p>
           </div>
+        </a>
       </div>
       {% endfor %}
     </div>
