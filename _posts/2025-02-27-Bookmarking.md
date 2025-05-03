@@ -55,17 +55,17 @@ pin: true
 }
 .card-name{
   color: rgb(114, 223, 186);
+  font-weight: 600;
 }
 
 .favicon {
-  width: 32px;
-  height: 32px;
+  max-width: 40px;
+  max-height: 40px;
   border-radius: 6px;
 }
 
 .card-link {
   color: #3b82f6;
-  text-decoration: none;
   display: block;
 }
 
@@ -101,9 +101,9 @@ pin: true
     <div class="card-grid">
       {% for item in category.items %}
       <div class="bookmark-card">
-        <a href="{{ item.url }}" target="_blank" class="card-link">
+        <a class="card-link" href="{{ item.url }}" target="_blank">
           <div class="card-header">
-            <img src="{{ item.icon }}" class="favicon" alt="{{ item.name }}"/>
+            <img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/>
             <h3 class="card-name">{{ item.name }}</h3>
           </div>
           <p class="card-desc">{{ item.description }}</p>
