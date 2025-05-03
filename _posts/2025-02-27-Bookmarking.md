@@ -90,7 +90,7 @@ pin: true
 }
 .favicon {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
