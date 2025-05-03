@@ -58,9 +58,6 @@ pin: true
   color: rgb(114, 223, 186);
   font-weight: 600;
   font-size: 16px;
-
-border: 1px solid red;
-border-top: none;
 }
 
 .div-img{
@@ -109,13 +106,13 @@ border-top: none;
     <div class="card-grid">
       {% for item in category.items %}
       <div class="bookmark-card">
-        <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-content">
+        <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
             <div class="card-name">{{ item.name }}</div>
+        </a>
             <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <p class="card-desc">{{ item.description }}</p>
           </div>
-        </a>
       </div>
       {% endfor %}
     </div>
