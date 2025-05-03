@@ -74,7 +74,7 @@ pin: true
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.3;
-  display: grid;
+  display: flex;
   justify-items: center;
   align-items: center;
 }
@@ -89,7 +89,6 @@ pin: true
   display: grid;
   justify-items: center;
   align-items: center;
-  margin: 0;
 }
 .favicon {
   width: 100%;
