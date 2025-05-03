@@ -58,6 +58,10 @@ pin: true
   font-weight: 600;
   font-size: 16px;
 }
+.div-img{
+  max-width: 80px;
+  max-height: 50px;
+}
 
 .favicon {
   max-width: 80px;
@@ -111,8 +115,8 @@ pin: true
         <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-content">
           <div class="card-header">
+            <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <div class="card-name">{{ item.name }}</div>
-            <img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/>
           </div>
           <p class="card-desc">{{ item.description }}</p>
           <div class="tags">
