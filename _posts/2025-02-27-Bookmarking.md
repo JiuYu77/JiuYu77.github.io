@@ -61,12 +61,13 @@ pin: true
 }
 
 .div-img{
-  max-width: 100px;
+  max-width: 80px;
   max-height: 50px;
+  box-sizing: border-box;
 }
 .favicon {
-  max-width: 100px;
-
+  width: auto;
+  height: auto;
   border-radius: 6px;
 }
 
