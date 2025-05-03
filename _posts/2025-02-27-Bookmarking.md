@@ -58,14 +58,16 @@ pin: true
   color: rgb(114, 223, 186);
   font-weight: 600;
   font-size: 16px;
+
+border: 1px solid red;
 }
+
 .div-img{
   max-width: 80px;
   max-height: 50px;
 
   display: inline;
 }
-
 .favicon {
   max-width: 80px;
   max-height: 50px;
@@ -82,7 +84,7 @@ pin: true
 }
 
 .card-link:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .card-desc{
