@@ -31,6 +31,7 @@ pin: true
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+border: 1px solid red;
 }
 
 /* 单张卡片样式 */
