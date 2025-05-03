@@ -53,6 +53,9 @@ pin: true
   gap: 1rem;
   margin-bottom: 1rem;
 }
+.card-name{
+  color: rgb(114, 223, 186);
+}
 
 .favicon {
   width: 32px;
@@ -79,14 +82,20 @@ pin: true
   font-size: 0.9em;
   margin: 0.2rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  .bookmark-card {
+    background: #2d3748;
+    color: white;
+  }
+}
 </style>
 
 <div class="bookmark-container">
   {% for category in site.data.Bookmarking.categories %}
   <section class="category-section">
     <h2 class="category-title">
-      <span class="category-icon">{{ category.icon }}</span>
-      {{ category.name }}
+      <span class="category-icon">{{ category.icon }}</span> {{ category.name }}
     </h2>
 
     <div class="card-grid">
@@ -94,12 +103,15 @@ pin: true
       <div class="bookmark-card">
         <a href="{{ item.url }}" target="_blank" class="card-link">
           <div class="card-header">
-            <img src="{{ item.icon }}"
-                 class="favicon"
-                 alt="{{ item.name }}">
-            <h3>{{ item.name }}</h3>
+            <img src="{{ item.icon }}" class="favicon" alt="{{ item.name }}"/>
+            <h3 class="card-name">{{ item.name }}</h3>
           </div>
           <p class="card-desc">{{ item.description }}</p>
+          <div class="tags">
+			{% for tag in item.tags %}
+			<span class="tag">{{ tag }}</span>
+			{% endfor %}
+          </div>
         </a>
       </div>
       {% endfor %}
@@ -109,4 +121,3 @@ pin: true
 </div>
 
 
-<img src="https://www.google.com/s2/favicons?domain={{ item.url | split: '//' | last }}"
