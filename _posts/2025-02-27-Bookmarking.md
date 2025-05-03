@@ -47,7 +47,9 @@ pin: true
 
 .bookmark-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 15px rgba(99,102,241,0.1);
+  box-shadow:
+      0 8px 32px rgba(99,102,241,0.15),
+      0 16px 48px rgba(99,102,241,0.1);
 }
 
 /* 卡片内容样式 */
