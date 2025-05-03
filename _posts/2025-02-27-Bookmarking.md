@@ -98,7 +98,7 @@ pin: true
 <div class="bookmark-container">
     <h2 class="category-title" id="{{ category.name }}">
       <span class="category-icon">{{ category.icon }}</span> {{ category.name }}
-      <a href="#{{ category.name }}" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+      <a href="#{{ category.name }}" class="anchor text-muted"></a>
     </h2>
 
     <div class="card-grid">
