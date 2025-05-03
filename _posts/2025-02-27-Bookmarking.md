@@ -60,8 +60,8 @@ pin: true
 }
 
 .favicon {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 80px;
+  max-height: 50px;
   border-radius: 6px;
 }
 
