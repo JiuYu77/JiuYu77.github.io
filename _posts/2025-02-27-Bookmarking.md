@@ -88,6 +88,7 @@ pin: true
   aspect-ratio: 1/1;
   border-radius: 14px;
   padding: 12px;
+  margin-top: 0;
   display: grid;
   justify-items: center;
   align-items: center;
