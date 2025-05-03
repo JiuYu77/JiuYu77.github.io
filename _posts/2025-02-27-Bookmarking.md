@@ -83,6 +83,8 @@ pin: true
   background: rgba(99, 102, 241, 0.05);
   padding: 12px;
   display: grid;
+  justify-items: center;
+  align-items: center;
 }
 .favicon {
   width: 100%;
