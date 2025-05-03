@@ -181,7 +181,7 @@ categories:
         icon: /common/img/icon/cnki.ico
         description: 面向海内外读者提供中国学术文献、外文文献、学位论文、报纸、会议、年鉴、工具书等各类资源统一检索、统一导航、在线阅读和下载服务。
 
-      - name: Sci-Hub文献检索 \| 科学是照亮世界的火把
+      - name: Sci-Hub文献检索 | 科学是照亮世界的火把
         url: https://sci-hub.org.cn
         icon: https://sci-hub.org.cn/static/favicon-png.ico
         description: Sci-Hub文献检索是一个集文献检索、文献下载与文献互助于一体的学术服务网站。

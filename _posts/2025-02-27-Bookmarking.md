@@ -83,7 +83,6 @@ pin: true
   height: 100px;
   aspect-ratio: 1/1;
   border-radius: 14px;
-  background: rgba(99, 102, 241, 0.05);
   padding: 12px;
   display: grid;
   justify-items: center;
