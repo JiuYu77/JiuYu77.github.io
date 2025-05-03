@@ -72,7 +72,7 @@ pin: true
   grid-area: name;
   color: rgb(114, 223, 186);
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.3;
 
   height: 80px;
@@ -88,7 +88,6 @@ pin: true
   aspect-ratio: 1/1;
   border-radius: 14px;
   padding: 12px;
-  margin-top: 0px;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -98,7 +97,6 @@ pin: true
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
-  margin: 0;
 }
 
 .card-link {
