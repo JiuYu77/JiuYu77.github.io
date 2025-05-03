@@ -79,8 +79,6 @@ pin: true
   color: #3b82f6;
   text-decoration: none;
   display: block;
-  border: 1px solid red;
-  height: auto;
 }
 
 .card-link:hover {
