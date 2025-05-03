@@ -58,6 +58,7 @@ pin: true
   color: rgb(114, 223, 186);
   font-weight: 600;
   font-size: 16px;
+  display: inline;
 }
 .div-img{
   max-width: 80px;
@@ -88,7 +89,6 @@ pin: true
 }
 
 .card-desc{
-  display: inline;
 }
 
 @media (prefers-color-scheme: dark) {
