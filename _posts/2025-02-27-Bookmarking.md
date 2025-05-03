@@ -87,6 +87,9 @@ pin: true
   text-decoration: underline;
 }
 
+.card-desc{
+  display: inline;
+}
 
 @media (prefers-color-scheme: dark) {
   .bookmark-card {
