@@ -96,7 +96,10 @@ pin: true
 
 {% for category in site.data.Bookmarking.categories %}
 <div class="bookmark-container">
-    <h2 class="category-title" id="{{ category.name }}"><span class="category-icon">{{ category.icon }}</span> {{ category.name }}<a href="#{{ category.name }}"></a></h2>
+    <h2 class="category-title" id="{{ category.name }}">
+      <span class="category-icon">{{ category.icon }}</span> {{ category.name }}
+      <a href="#{{ category.name }}" class="anchor text-muted"><i class="fas fa-hashtag">::before</i></a>
+    </h2>
 
     <div class="card-grid">
       {% for item in category.items %}
