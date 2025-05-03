@@ -75,14 +75,21 @@ pin: true
 }
 
 .div-img{
-  max-width: 80px;
-  max-height: 50px;
-  box-sizing: border-box;
+  grid-area: icon;
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 14px;
+  background: rgba(99, 102, 241, 0.05);
+  padding: 12px;
+  display: grid;
+  place-items: center;
 }
 .favicon {
-  width: auto;
-  height: auto;
-  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .card-link {
