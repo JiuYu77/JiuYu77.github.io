@@ -62,6 +62,7 @@ pin: true
 
 .div-img{
   max-width: 300px;
+  max-height: 50px;
 }
 .favicon {
   max-width: 300px;
