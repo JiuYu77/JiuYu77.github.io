@@ -23,6 +23,7 @@ pin: true
   border-left: 4px solid #6366f1;
   padding-left: 1rem;
   margin: 3rem 0 1.5rem;
+background: linear-gradient(90deg, rgba(99,102,241,0.1) 0%, transparent 100%);
 }
 
 /* 卡片布局 */
