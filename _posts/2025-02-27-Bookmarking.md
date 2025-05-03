@@ -95,8 +95,8 @@ pin: true
 </style>
 
 {% for category in site.data.Bookmarking.categories %}
-<div class="bookmark-container">
 ## <div class='category-title'><span class='category-icon'>{{ category.icon }}</span> {{ category.name }}</div>
+<div class="bookmark-container">
 
     <div class="card-grid">
       {% for item in category.items %}
