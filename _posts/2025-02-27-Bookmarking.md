@@ -90,7 +90,6 @@ pin: true
 .card-desc{
   position: relative;
   left: 90px;
-  top: 25px;
 }
 
 @media (prefers-color-scheme: dark) {
