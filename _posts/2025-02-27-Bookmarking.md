@@ -60,6 +60,7 @@ pin: true
   font-size: 16px;
 
 border: 1px solid red;
+border-top: none;
 }
 
 .div-img{
