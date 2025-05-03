@@ -40,6 +40,7 @@ pin: true
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .bookmark-card:hover {
