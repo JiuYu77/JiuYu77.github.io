@@ -46,7 +46,7 @@ pin: true
 }
 
 .bookmark-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-6px);
   box-shadow: 0 10px 15px rgba(99,102,241,0.1);
 }
 
