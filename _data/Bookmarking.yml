@@ -203,12 +203,12 @@ categories:
       - name: Branin's.Base
         url: http://www.brainsbase.co.jp
         icon: /common/img/icon/brainsbase.png
-        description: 《夏目友人帐》系列<br>《我的青春恋爱物语果然有问题》
+        description: 《夏目友人帐》系列《我的青春恋爱物语果然有问题》
 
       - name: SHAFT Animation Studio
         url: https://www.shaft-web.co.jp
         icon: /common/img/icon/shaft.png
-        description: 《物语系列》<br>《魔法少女小圆》
+        description: 《物语系列》《魔法少女小圆》
 
       - name: Bandai Namco Filmworks INC
         url: https://www.bnfw.co.jp
@@ -223,12 +223,12 @@ categories:
       - name: 动画工房
         url: https://www.dogakobo.com
         icon: /common/img/icon/dogakobo.png
-        description: 《干物妹小埋》<br>《NEW GAME!》
+        description: 《干物妹小埋》《NEW GAME!》
 
       - name: A-1 Pictures（A1社）
         url: https://a1p.jp
         icon: https://a1p.jp/wp/wp-content/uploads/2019/03/ogp.jpg
-        description: 《刀剑神域》<br>《辉夜大小姐想让我告白》
+        description: 《刀剑神域》《辉夜大小姐想让我告白》
 
       - name: ufotable（飞碟社）
         url: https://www.ufotable.com
@@ -238,15 +238,15 @@ categories:
       - name: BONES（骨头社）
         url: https://www.bones.co.jp
         icon: https://www.bones.co.jp/wordpress/wp-content/themes/bones/assets/images/common/common/logo_header.png
-        description: 《钢之炼金术师FA》<br>《灵能百分百》
+        description: 《钢之炼金术师FA》《灵能百分百》
 
       - name: 京都动画（京阿尼）
         url: https://www.kyotoanimation.co.jp
         icon: https://www.kyotoanimation.co.jp/img/logo.png
-        description: 《凉宫春日的忧郁》<br>《轻音少女》
+        description: 《凉宫春日的忧郁》《轻音少女》
 
       - name: J.C.STAFF（节操社）
         url: http://jcstaff.co.jp
         icon: /common/img/icon/jcstaff.gif
-        description: 《龙与虎》<br>《某科学的超电磁炮》
+        description: 《龙与虎》《某科学的超电磁炮》
 
