@@ -88,8 +88,6 @@ pin: true
 }
 
 .card-desc{
-  position: relative;
-  left: 90px;
 }
 
 @media (prefers-color-scheme: dark) {
