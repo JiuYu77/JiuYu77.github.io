@@ -82,6 +82,7 @@ pin: true
 }
 
 .card-link:hover {
+  text-decoration: none;
 }
 
 .card-desc{
