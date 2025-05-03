@@ -39,7 +39,7 @@ pin: true
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow:
-      0 2px 8px rgba(0,0,0,0.05);
+      0 2px 8px rgba(0,0,0,0.05),
       0 12px 24px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
