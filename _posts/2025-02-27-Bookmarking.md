@@ -53,6 +53,15 @@ pin: true
 }
 
 /* 卡片内容样式 */
+.card-content{
+  display: grid;
+  grid-template-areas:
+	  "icon name"
+	  "desc desc";
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem 2rem;
+}
+
 .card-header {
   display: flex;
   align-items: center;
