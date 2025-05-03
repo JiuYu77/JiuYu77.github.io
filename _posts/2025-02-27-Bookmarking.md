@@ -88,7 +88,7 @@ pin: true
   aspect-ratio: 1/1;
   border-radius: 14px;
   padding: 12px;
-  margin-top: 0;
+  margin-top: 0px;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -98,6 +98,7 @@ pin: true
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
+  margin: 0;
 }
 
 .card-link {
