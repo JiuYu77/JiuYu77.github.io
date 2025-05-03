@@ -73,6 +73,7 @@ pin: true
   color: rgb(114, 223, 186);
   font-weight: 600;
   font-size: 1.5rem;
+  line-height: 1.3;
   align-self: center;
 }
 
@@ -104,8 +105,16 @@ pin: true
 .card-link:hover {
   text-decoration: underline;
 }
+.card-link:hover .favicon {
+  transform: scale(1.08);
+}
 
 .card-desc{
+  grid-area: desc;
+  color: var(--text-secondary, #666);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
