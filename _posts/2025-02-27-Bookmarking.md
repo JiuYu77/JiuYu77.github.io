@@ -104,8 +104,9 @@ pin: true
       {% for item in category.items %}
       <div class="bookmark-card">
         <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+          <div class="card-content">
           <div class="card-header">
-            <h3 class="card-name">{{ item.name }}</h3>
+            <div class="card-name">{{ item.name }}</div>
             <img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/>
           </div>
           <p class="card-desc">{{ item.description }}</p>
@@ -113,6 +114,7 @@ pin: true
 			{% for tag in item.tags %}
 			<span class="tag">{{ tag }}</span>
 			{% endfor %}
+          </div>
           </div>
         </a>
       </div>
