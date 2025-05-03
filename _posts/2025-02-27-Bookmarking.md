@@ -89,6 +89,7 @@ pin: true
   display: grid;
   justify-items: center;
   align-items: center;
+  margin: 0;
 }
 .favicon {
   width: 100%;
