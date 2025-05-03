@@ -114,8 +114,8 @@ pin: true
       <div class="bookmark-card">
         <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-content">
-            <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <div class="card-name">{{ item.name }}</div>
+            <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <p class="card-desc">{{ item.description }}</p>
             <div class="tags">
 			  {% for tag in item.tags %}
