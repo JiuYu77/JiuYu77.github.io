@@ -127,7 +127,7 @@ pin: true
   }
 
   .category-title {
-    color: #cccccc;
+    color: red;
   }
 }
 </style>
