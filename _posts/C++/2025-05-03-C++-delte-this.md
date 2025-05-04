@@ -31,10 +31,9 @@ tags: [C++]
 `delete this;` 的本质是**调用一个或多个析构函数，然后释放内存**。
 
 1. **类/结构体 的析构函数中使用delete this，会发生什么？**
+- 在析构函数中使用 delete this时，析构函数调用 `delete this`，`delete this` 又调用 `析构函数`，形成无限递归，造成堆栈溢出，系统崩溃（Linux 下出现段错误`Segmentation fault(core dumped)`），因此不能在析构函数中使用 `delete this`。
 
-在析构函数中使用 delete this时，析构函数调用 `delete this`，`delete this` 又调用 `析构函数`，形成无限递归，造成堆栈溢出，系统崩溃（Linux 下出现段错误`Segmentation fault(core dumped)`），因此不能在析构函数中使用 `delete this`。
-
-2. `静态成员函数`中不能使用 delete this。静态成员函数 为所有类对象共享，不属于某一个类示例，没有this指针。
+2. **`静态成员函数`中不能使用 delete this**。静态成员函数 为所有类对象共享，不属于某一个类实例，没有this指针。
 
 3. **非析构函数使用 delete this，会发生什么？**
 - **非析构函数** 中可以使用 `delete this`，这会调用析构函数释放资源，接着释放对象内存，指向对象的指针变为 悬挂指针(Dangling Pointer)。
