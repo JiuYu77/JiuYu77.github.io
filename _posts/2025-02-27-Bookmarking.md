@@ -125,6 +125,10 @@ pin: true
     background: #2d3748;
     color: white;
   }
+
+  .category-title {
+    color: #cccccc;
+  }
 }
 </style>
 
