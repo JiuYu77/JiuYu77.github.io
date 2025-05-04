@@ -1,6 +1,6 @@
 ---
 title: C++ delete this
-description: delete this,栈对象、堆对象。
+description: delete this，栈对象、堆对象。
 author: yu
 date: 2025-05-03 16:18:41 +0800
 categories: [C++, 基础进阶]
@@ -31,12 +31,12 @@ tags: [C++]
 `delete this;` 的本质是**调用一个或多个析构函数，然后释放内存**。
 
 1. **类/结构体 的析构函数中使用delete this，会发生什么？**
-- 在析构函数中使用 delete this时，析构函数调用 `delete this`，`delete this` 又调用 `析构函数`，形成无限递归，造成堆栈溢出，系统崩溃（Linux 下出现段错误`Segmentation fault(core dumped)`），因此不能在析构函数中使用 `delete this`。
+- 在析构函数中使用 delete this时，析构函数调用 `delete this`，delete this 又调用 `析构函数`，形成无限递归，造成堆栈溢出，系统崩溃（Linux 下出现段错误`Segmentation fault(core dumped)`），因此**不能在析构函数中使用 delete this**。
 
 2. **`静态成员函数`中不能使用 delete this**。静态成员函数 为所有类对象共享，不属于某一个类实例，没有this指针。
 
-3. **非析构函数使用 delete this，会发生什么？**
-- **非析构函数** 中可以使用 `delete this`，这会调用析构函数释放资源，接着释放对象内存，指向对象的指针变为 悬挂指针(Dangling Pointer)。
+3. **其他成员函数使用 delete this，会发生什么？**
+- 非析构函数、非静态成员函数， 中**可以使用** `delete this`，这会调用析构函数释放资源，接着释放对象内存，指向对象的指针变为 悬挂指针(Dangling Pointer)。
 - 之后仍然可以通过 对象指针 调用 成员函数。
 - 只不过`non-static 成员变量`中的数据已经不正确了，若成员函数中使用了`非静态成员变量`，则得不到预期的结果。
 - `static成员变量` 可以正常使用，因为它为所有类对象共享，对象存储在堆区，但静态成员变量存储在 静态存储区 或 只读数据段。
