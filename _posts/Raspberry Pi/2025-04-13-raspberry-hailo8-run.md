@@ -23,6 +23,8 @@ image:
    - 将生成的.hef文件部署到Hailo设备上
    - 使用Hailo的运行时库在设备上执行推理
 
+参考文献：[张高兴的 Raspberry Pi AI 开发指南](https://www.cnblogs.com/zhanggaoxing/p/18597244)
+
 详细步骤请见下文。
 
 ##  导出PyTorch模型为ONNX
@@ -89,7 +91,7 @@ hef
 
 #### 可能遇到的问题
 
-1. **DNN library is not found.**  
+1. **DNN library is not found.**
 Python查看 tensorflow 信息：
 ```python
 import tensorflow as tf
@@ -97,13 +99,13 @@ build = tf.sysconfig.get_build_info()
 print(build['cuda_version'])   # 查看 tensorflow 使用的cuda版本，如11.8
 print(build['cudnn_version'])  # 查看 tensorflow 使用的cudnn版本，如8
 ```
-若没有cuda，则需要安装，官网下载安装 或 命令行apt安装，不需要与tensorflow 使用的cuda版本 严格一致。  
+若没有cuda，则需要安装，官网下载安装 或 命令行apt安装，不需要与tensorflow 使用的cuda版本 严格一致。
 若没有cudnn，则需要安装，官网下载安装 或 命令行apt安装，以cudnn8为例：
 ```bash
 sudo apt install libcudnn8 libcudnn8-dev
 ```
 
-2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory  
+2. Could not load library **libcublasLt.so.12**. Error: **libcublasLt.so.12**: cannot open shared object file: No such file or directory
 已安装的 Hailo Dataflow Compiler 版本，需要的 `libcublas` 库版本不满足。解决方法：重新安装 cuda 或 Hailo Dataflow Compiler，升高/降低 版本。
 ```shell
 apt search libcublas  # 查看cublas版本
