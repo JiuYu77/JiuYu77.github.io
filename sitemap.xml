@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
+<url>
+ <loc>https://jiuyu77.github.io/</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/categories</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/archives</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/about</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/feed.xml</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/Bookmarking</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/C++-delte-this</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/shared-memory</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/C++-Memory-Management</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/ssh-no-password</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/ssh-key</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/raspberry-hailo8-run</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/PyTorch-onnx-export</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/MobaXterm-X11-Forwarding</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/posts/raspberry-hailo8</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/page2</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/page3</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/c</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/linux</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/apt</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/raspberry-pi</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/command</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/hailo-8</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/ssh</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/ai</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/pytorch</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://jiuyu77.github.io/tags/website</loc>
+ <priority>0.3</priority>
+ <lastmod>2025-05-30</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+</urlset>
