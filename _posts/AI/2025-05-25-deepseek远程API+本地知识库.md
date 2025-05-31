@@ -200,7 +200,6 @@ def list_models():
         ]
     })
 
-# @app.route('/ask', methods=['POST'])
 @app.route('/v1/chat/completions', methods=['POST'])
 def chat():
     data = request.json
