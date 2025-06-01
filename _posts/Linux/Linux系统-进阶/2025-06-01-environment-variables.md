@@ -195,12 +195,11 @@ Linux启动时会执行，`~/.bash_profile`、`~/.bash_login`、`~/.profile`，�
 ```
 
 `~/.bash_logout`：每次退出系统（退出bash shell）时执行该文件。
+
 `~/.bash_history`：保存了当前用户使用过的历史命令。
 
 
 **配置用户环境变量**
-##### 配置用户环境变量
-###### 配置用户环境变量
 
 1. 在`.bash_profile`或`.profile`中配置环境变量（**推荐**）<br/>
 若存在.bash_profile文件，则优先在此文件中设置环境变量；否则就在.profile文件中设置环境变量
