@@ -178,9 +178,9 @@ export PATH=/home/jiuyu/myDocuments:$PATH
 
 用户环境变量只对当前用户生效。
 
-默认情况下，用户主目录不一定有.bash_profile文件，存在.bash_profile文件或.bash_login文件时，bash不会读取.profile文件。
+默认情况下，用户主目录不一定存在`~/.bash_profile`文件；存在.bash_profile 或 `~/.bash_login`文件时，bash**不会读取**`~/.profile`文件。
 
-Linux启动时会执行，~/.bash_profile  ~/.bash_login  ~/.profile，三者中的一个。
+Linux启动时会执行，`~/.bash_profile`、`~/.bash_login`、`~/.profile`，三者中的一个。
 
 执行优先级：
 ```shell
@@ -194,8 +194,13 @@ Linux启动时会执行，~/.bash_profile  ~/.bash_login  ~/.profile，三者中
 ~/.profile
 ```
 
+`~/.bash_logout`：每次退出系统（退出bash shell）时执行该文件。
+`~/.bash_history`：保存了当前用户使用过的历史命令。
+
 
 **配置用户环境变量**
+##### 配置用户环境变量
+###### 配置用户环境变量
 
 1. 在`.bash_profile`或`.profile`中配置环境变量（**推荐**）<br/>
 若存在.bash_profile文件，则优先在此文件中设置环境变量；否则就在.profile文件中设置环境变量
