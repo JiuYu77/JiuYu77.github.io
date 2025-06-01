@@ -172,7 +172,7 @@ export PATH=/home/jiuyu/myDocuments:$PATH
 
 #### 环境变量脚本文件的执行顺序
 
-`/etc/profile` &rightarrow; `/etc/profile.d/`目录下的脚本文件 -> `/etc/bash.bashrc` -> 用户的`.bash_profile`、`.bash_login` 或 `.profile`文件其中一个 -> 用户的`.bashrc`。
+`/etc/profile` --> `/etc/profile.d/`目录下的脚本文件 -> `/etc/bash.bashrc` -> 用户的`.bash_profile`、`.bash_login` 或 `.profile`文件其中一个 -> 用户的`.bashrc`。
 
 #### 用户环境变量
 
