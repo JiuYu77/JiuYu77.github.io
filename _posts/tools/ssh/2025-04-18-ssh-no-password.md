@@ -27,3 +27,6 @@ scp id_rsa.pub 用户名@hostname:~/.ssh/id_rsa2.pub
 cd ~/.ssh
 cat id_rsa2.pub >> authorized_keys
 ```
+
+然后 上传的公钥文件（这里是`id_rsa2.pub`）就可以**删除**了。
+
