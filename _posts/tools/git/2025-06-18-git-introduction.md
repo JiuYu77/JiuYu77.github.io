@@ -5,6 +5,9 @@ author: yu
 date: 2025-06-18 15:22:32 +0800
 categories: [Blogging, git]
 tags: [Git]
+image:
+  path: /common/posts/git/git-scm.png
+  alt: git-scm
 ---
 
 ## 前言
