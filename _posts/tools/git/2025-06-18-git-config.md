@@ -37,7 +37,7 @@ git config --global user.email 'your_email'
 
 ### 局部配置
 
-进行`局部配置`时，需要处于 git仓库 所在目录。
+进行局部配置时，需要处于 **git仓库 所在目录**。
 
 配置用户名
 ```shell
