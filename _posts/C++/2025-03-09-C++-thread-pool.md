@@ -32,7 +32,7 @@ class ThreadPool
 private:
 	unsigned int m_threads; // number of threads
 	std::vector<std::thread> m_threadPool; // thread array
-	
+
 	std::queue<std::function<void()>> m_tasks; // task queue
 	std::mutex m_mutex;
 	std::condition_variable m_condition;
@@ -87,7 +87,7 @@ public:
 
     // add task to the queue
     template <typename F, typename... Args>
-    void enqueue(F&& f, Args&&... args)
+    void AddTask(F&& f, Args&&... args)
     {
         auto task = std::bind(std::forward<F>(f), std::forward<Args>(args)...);
         {
@@ -104,7 +104,7 @@ public:
 #include <iostream>
 #include <string>
 
-int main() 
+int main()
 {
     ThreadPool t_pool(4);
     for (int i = 0; i < 8; i++) {
@@ -125,28 +125,135 @@ int main()
 将`ThreadPool`改造为**单例模式**。
 
 ```cpp
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <functional>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
 
+
+class ThreadPool
+{
+private:
+    const int m_MAXTHREAD;
+    std::vector<std::thread> m_Threads;
+    int m_ThreadNum = 0;
+
+    using func_type = std::function<void()>;
+
+    const int m_MAXTASK;
+    std::queue<func_type> m_Tasks;
+
+    bool m_Stop;
+
+    std::mutex m_Mutex;
+    std::condition_variable m_ConditionVar;
+
+    ThreadPool(const int& max_thread, const int& max_task)
+    : m_MAXTHREAD(max_thread), m_Threads(m_MAXTHREAD), m_MAXTASK(max_task)
+    {}
+
+    static void Worker()
+    {
+        ThreadPool* t_pool = GetInstance();
+        t_pool->Run();
+    }
+
+    void Run()
+    {
+        while (true)
+        {
+            func_type task;
+            {
+                std::unique_lock<std::mutex> lock(m_Mutex);
+                m_ConditionVar.wait(lock, [this]()
+                    {
+                        return m_Stop || !m_Tasks.empty();
+                    });
+
+                if(m_Stop && m_Tasks.empty())
+                {
+                    return;
+                }
+
+                task = std::move(m_Tasks.front());
+                m_Tasks.pop();
+            }
+            m_ConditionVar.notify_one(); // 唤醒添加任务的线程
+            task();
+        }
+    }
+
+public:
+    ~ThreadPool()
+    {
+        {
+            std::unique_lock<std::mutex> lock(m_Mutex);
+            m_Stop = true;
+        }
+        m_ConditionVar.notify_all();
+        for(auto& thread : m_Threads)
+        {
+            thread.join();
+        }
+    }
+
+    static ThreadPool* GetInstance(const int& max_thread=5, const int& max_task=20)
+    {
+        static ThreadPool t_pool(max_thread, max_task);
+        return &t_pool;
+    }
+
+    template<typename F, typename ...Args>
+    void AddTask(F&& f, Args&&... args)
+    {
+        {
+            std::unique_lock<std::mutex> lock(m_Mutex);
+
+            m_ConditionVar.wait(lock, [this]()
+            {
+                if(m_Tasks.size() >= m_MAXTASK)
+                {
+                    std::cout << "The task queue is full." << std::endl;
+                }
+                return m_Tasks.size() < m_MAXTASK;
+            });
+
+            auto task = std::bind(std::forward<F>(f), std::forward<Args>(args)...);
+            m_Tasks.push(task);
+        }
+
+        if(m_ThreadNum < m_MAXTHREAD)  // 添加任务的过程中依次创建线程，直至达到指定的最大线程数
+        {
+            m_Threads[m_ThreadNum] = std::thread(Worker);
+            m_ThreadNum++;
+        }
+        m_ConditionVar.notify_one();
+    }
+};
 ```
 
 ## 多线程程序一定就好吗？
 
 不一定，一个程序设计为单线程还是多线程，要看具体的应用场景：
 
-**IO密集型**  
+**IO密集型**<br>
 IO密集型程序，会进行大量IO操作，比如设备、文件、网络操作。
 
 无论是单核CPU、多核CPU、多个CPU，都比较`适合`采用多线程。
 
-**CPU密集型**  
+**CPU密集型**<br>
 CPU密集型程序，其指令大多是做计算用的。
-- 单核CPU  
+- 单核CPU<br>
 多线程存在上下文切换，会带来额外开销，线程越多上下文切换额外花费的时间也越多，还不如一个线程一直进行计算的效率高，`不适合`多线程。
-- 多核CPU、多个CPU  
+- 多核CPU、多个CPU<br>
 多个线程可以并行执行，对CPU利用率好，可以采用多线程。
 
 ## 线程不是越多越好
 
-为了完成任务，创建很多的线程可以吗？线程真的越多越好吗？  
+为了完成任务，创建很多的线程可以吗？线程真的越多越好吗？<br>
 `线程不是越多越好`，可从一下方面分析：
 - 线程的创建和销毁都是非常“重”的操作：空间的切换、内存分配（线程PCB、线程的内核栈等）
 - 线程栈本身占用大量内存：创建了一大批线程，每一个线程都需要线程栈，栈几乎都被占用完了，无法处理实际业务
