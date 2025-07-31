@@ -1,0 +1,14 @@
+prefix=/root/softwareInstall/opencv-4.7.0/build/install
+exec_prefix=${prefix}
+datarootdir=${prefix}/share
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: opencv
+Description: The opencv library
+Version: 4.7.0
+Requires:
+Cflags: -I${includedir}/opencv4
+Libs: -L${libdir} -lopencv_core -lopencv_imgcodecs -lopencv_imgproc -lopencv_highgui -lopencv_calib3d -lopencv_dnn -lopencv_features2d -lopencv_flann -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_stitching -lopencv_video -lopencv_videoio
+#-lopencv_shape -lopencv_superres -lopencv_videostab
+# 安装好OpenCV4.7.0后，发现没有这几个动态库：-lopencv_shape -lopencv_superres -lopencv_videostab
