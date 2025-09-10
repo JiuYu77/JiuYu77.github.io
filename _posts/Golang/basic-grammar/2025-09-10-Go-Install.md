@@ -20,6 +20,9 @@ Go官网：<a href="https://go.dev/" target="_blank">https://go.dev</a>
 
 Google还提供了一个中国大陆地区特供版Go官网：<a href="https://golang.google.cn/" target="_blank">https://golang.google.cn</a>，可直接访问。
 
+可以在官网学习Go：<a href="https://golang.google.cn/learn/" target="_blank">https://golang.google.cn/learn/</a>
+或<a href="https://go.dev/learn/" target="_blank">https://go.dev/learn/</a>
+
 ## 安装Go
 
 参考官方教程：<a href="https://go.dev/doc/install" target="_blank">https://go.dev/doc/install</a>或
@@ -29,4 +32,7 @@ Google还提供了一个中国大陆地区特供版Go官网：<a href="https://g
 官网教程中，`Linux`系统下将Go安装（解压）到了`/usr/local/go`，我们也可以解压到`其他`自己想用的目录（如 ~/install/go），然后配置`PATH` 环境变量。
 
 Mac系统应该也可以，由于没有Mac电脑，所以没有尝试。
+
+
+现在你已经安装好了Go，接下来你也许需要配置<a href="posts/Go-env-variable/" target="_blank">Golang 环境变量</a>。
 
