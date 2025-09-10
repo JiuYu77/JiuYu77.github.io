@@ -6,7 +6,7 @@ date: 2025-09-10 11:58:20 +0800
 categories: [Golang, 基础]
 tags: [Go, Golang]
 image:
-  path: /common/posts/Golang/Go_Logo_Blue.svg
+  path: /common/posts/Golang/Golang02.jpg
   alt: Golang
 ---
 
