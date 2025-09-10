@@ -32,6 +32,7 @@ go env GOROOT GOPATH
 ## 重要Go环境变量
 
 Go环境变量官方文档：<a href="https://go.dev/ref/mod#environment-variables" target="_blank">https://go.dev/ref/mod#environment-variables</a>
+或 <a href="https://golang.google.cn/ref/mod#environment-variables" target="_blank">https://golang.google.cn/ref/mod#environment-variables</a>
 
 ### GOROOT
 
