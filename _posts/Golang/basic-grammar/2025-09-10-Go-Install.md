@@ -14,7 +14,7 @@ image:
 ## 前言
 
 `Golang` 简称 `Go`，由Google公司研发，是一种快速、静态类型、编译型语言，看起来像动态类型、解释型语言。
-Go语言并发机制（concurrency mechanisms）强大，可轻松实现高并发，并具有**垃圾回收**（GC，garbage collection）机制 和 **运行时反射能力**（power of run-time reflection）。
+Go语言**并发机制**（concurrency mechanisms）强大，可轻松实现高并发，并具有**垃圾回收**（GC，garbage collection）机制 和 **运行时反射能力**（power of run-time reflection）。
 
 Go官网：<a href="https://go.dev/" target="_blank">https://go.dev</a>
 
