@@ -34,5 +34,5 @@ Google还提供了一个中国大陆地区特供版Go官网：<a href="https://g
 Mac系统应该也可以，由于没有Mac电脑，所以没有尝试。
 
 
-现在你已经安装好了Go，接下来你也许需要配置<a href="posts/Go-env-variable/" target="_blank">Golang 环境变量</a>。
+现在你已经安装好了Go，接下来你也许需要配置<a href="/posts/Go-env-variable/" target="_blank">Golang 环境变量</a>。
 
