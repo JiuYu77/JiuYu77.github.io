@@ -36,9 +36,11 @@ go mod init [module-path]
 go mod init example.com/hello
 ```
 生成的 go.mod 文件内容，包括 模块路径 和 你使用的go版本：
->module example.com/hello
+```plaintext
+module example.com/hello
 
->go 1.25.1
+go 1.25.1
+```
 
 
 ### go mod tidy
@@ -91,9 +93,11 @@ go work init [moddirs]
 >go 1.25.1
 
 若给定了模块，如`go work init ./hello`，则`go.work`文件：
->go 1.25.1
+```plaintext
+go 1.25.1
 
->use ./hello
+use ./hello
+```
 
 ### go work use
 
@@ -113,11 +117,13 @@ go work init
 go work use ./hello ./test
 ```
 go.work文件：
->go 1.25.1
->
->use (
->        ./1
->        ./2
->)
+```plaintext
+go 1.25.1
+
+use (
+        ./1
+        ./2
+)
+```
 
 
