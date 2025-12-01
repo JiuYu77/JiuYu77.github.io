@@ -38,6 +38,7 @@ import (
   "net/http"
   "github.com/gin-gonic/gin"
 )
+
 func main() {
   r := gin.Default()
 
@@ -69,6 +70,7 @@ func main() {
 为了统一响应格式，可以封装一个响应函数，`resp/resp.go`文件：
 ```go
 package resp
+
 import (
   "net/http"
   "github.com/gin-gonic/gin"
@@ -145,17 +147,17 @@ func main() {
   })
 
   r.GET("/users", func(c *gin.Context) {
-		resp.OKWithData(c, gin.H{
-			"name": "秦始皇",
+    resp.OKWithData(c, gin.H{
+      "name": "秦始皇",
       "age":  22,
-		})
-	})
+    })
+  })
 
   r.POST("/users", func(c *gin.Context) {
-		resp.FailWithMsg(c, "参数错误")
-	})
+    resp.FailWithMsg(c, "参数错误")
+  })
 
   r.Run(":8080") // 启动服务器，监听端口8080
 }
 ```
-通过这种方式，可以更方便地管理和返回 JSON 响应，提升代码的可读性和维护性。
+通过这种方式，可以更方便地管理和返回 JSON 响应，提升代码的可读性和可维护性。
