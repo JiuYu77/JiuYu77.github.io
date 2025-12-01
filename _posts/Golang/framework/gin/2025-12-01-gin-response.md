@@ -1,6 +1,6 @@
 ---
 title: 【Gin】response - 响应json
-description: 服务端返回json格式数据。
+description: 服务端返回json格式数据，服务端向客户端响应JSON。
 author: yu
 date: 2025-12-01 13:47:50 +0800
 categories: [Golang, 框架]
