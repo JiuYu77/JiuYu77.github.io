@@ -37,7 +37,7 @@ func main() {
   r.Run(":8080") // 启动服务器，监听端口8080
 }
 ```
-确保你已经在项目中设置了HTML模板文件（例如`index.html`），例如：
+确保你已经在项目中设置了HTML模板文件（例如`templates/index.html`），例如：
 
 ```html
 <!DOCTYPE html>
