@@ -3,7 +3,7 @@ title: 【Golang】go.mod、go.sum、go.work
 description: go.mod、go.sum、go.work文件，go mod、go work命令。
 author: yu
 date: 2025-09-17 16:13:53 +0800
-categories: [Golang, 基础]
+categories: [Golang, go基础]
 tags: [Go, Golang]
 image:
   path: /common/posts/Golang/Golang.jpg

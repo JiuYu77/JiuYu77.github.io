@@ -3,7 +3,7 @@ title: 【Gin】response - 响应html
 description: 服务端返回html格式数据，服务端向客户端响应HTML。
 author: yu
 date: 2025-12-01 14:54:19 +0800
-categories: [Golang, 框架]
+categories: [Golang, go框架]
 tags: [Go, Golang, Gin]
 image:
   path: /common/posts/Golang/Golang.jpg

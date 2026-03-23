@@ -3,7 +3,7 @@ title: 【Golang】环境变量
 description: Go环境会参考其环境变量进行配置，如GOROOT、GOPATH、GOPROXY。
 author: yu
 date: 2025-09-10 11:58:20 +0800
-categories: [Golang, 基础]
+categories: [Golang, go基础]
 tags: [Go, Golang]
 image:
   path: /common/posts/Golang/Golang02.jpg

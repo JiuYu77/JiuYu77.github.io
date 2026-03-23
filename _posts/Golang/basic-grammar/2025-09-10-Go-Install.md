@@ -3,7 +3,7 @@ title: 【Golang】 安装
 description: 学习或使用Go之前，需要安装Go。
 author: yu
 date: 2025-09-10 09:29:00 +0800
-categories: [Golang, 基础]
+categories: [Golang, go基础]
 tags: [Go, Golang]
 image:
   path: /common/posts/Golang/Golang.jpg
