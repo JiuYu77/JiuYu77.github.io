@@ -182,12 +182,12 @@ pin: true
     <div class="card-grid">
       {% for item in category.items %}
       <div class="bookmark-card">
-        <a class="card-link img-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-content">
-            <div class="card-name">{{ item.name }}</div>
             <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
+            <a class="card-link img-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+              <div class="card-name">{{ item.name }}</div>
+            </a>
           </div>
-        </a>
         <div class="card-tooltip">{{ item.description }}</div>
       </div>
       {% endfor %}
