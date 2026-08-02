@@ -35,6 +35,7 @@ pin: true
 
 /* 单张卡片样式 */
 .bookmark-card {
+  position: relative;
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
@@ -55,11 +56,10 @@ pin: true
 /* 卡片内容样式 */
 .card-content{
   display: grid;
-  grid-template-areas:
-	  "icon name"
-	  "desc desc";
+  grid-template-areas: "icon name";
   grid-template-columns: auto 1fr;
   gap: 1.5rem 2rem;
+  align-items: center;
 }
 
 .card-header {
@@ -112,12 +112,44 @@ pin: true
   transform: scale(1.08);
 }
 
-.card-desc{
-  grid-area: desc;
-  color: var(--text-secondary, #666);
-  font-size: 1rem;
+/* 鼠标悬停时显示的网站简介 */
+.card-tooltip {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: rgba(17, 24, 39, 0.95);
+  color: #fff;
+  font-size: 0.875rem;
   line-height: 1.7;
-  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  width: max-content;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 100;
+  pointer-events: none;
+  word-break: break-word;
+}
+
+.card-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: rgba(17, 24, 39, 0.95);
+}
+
+.bookmark-card:hover .card-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -144,11 +176,11 @@ pin: true
       <div class="bookmark-card">
         <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-content">
-            <div class="card-name">{{ item.name }}</div>
             <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
-            <p class="card-desc">{{ item.description }}</p>
+            <div class="card-name">{{ item.name }}</div>
           </div>
         </a>
+        <div class="card-tooltip">{{ item.description }}</div>
       </div>
       {% endfor %}
     </div>
