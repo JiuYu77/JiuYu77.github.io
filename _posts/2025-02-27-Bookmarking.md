@@ -38,7 +38,7 @@ pin: true
   position: relative;
   background: white;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow:
       0 2px 8px rgba(0,0,0,0.05),
       0 12px 24px rgba(0,0,0,0.1);
@@ -75,14 +75,32 @@ pin: true
 }
 
 .div-img{
+  position: relative;
   grid-area: icon;
   width: 80px;
   height: 80px;
   border-radius: 14px;
-  padding: 12px;
   display: grid;
   justify-items: center;
   align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* 构建后主题会把 img 包成 a（class 迁移到 a 上），用绝对定位强制水平垂直居中 */
+.div-img a{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.div-img a img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 .favicon {
   width: 100%;
@@ -166,8 +184,8 @@ pin: true
       <div class="bookmark-card">
         <a class="card-link img-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-content">
-            <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <div class="card-name">{{ item.name }}</div>
+            <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
           </div>
         </a>
         <div class="card-tooltip">{{ item.description }}</div>
