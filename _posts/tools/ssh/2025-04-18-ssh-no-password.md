@@ -3,7 +3,7 @@ title: SSH实现无密码远程登录
 description: ssh生成密钥（公钥/私钥）、实现无密码SSH远程连接。
 author: yu
 date: 2025-04-18 21:47:32 +0800
-categories: [Blogging, ssh]
+categories: [Tools, ssh]
 tags: [SSH]
 ---
 

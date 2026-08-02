@@ -3,7 +3,7 @@ title: 【ssh】openssh-server 配置文件
 description: ssh，openssh-server，sshd_config，ssh服务端配置文件，IPv4，IPv6。
 author: yu
 date: 2025-10-22 18:23:46 +0800
-categories: [Blogging, ssh]
+categories: [Tools, ssh]
 tags: [SSH]
 ---
 

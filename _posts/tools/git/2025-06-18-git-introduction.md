@@ -3,7 +3,7 @@ title: Git 简介
 description: git 版本控制器。
 author: yu
 date: 2025-06-18 15:22:32 +0800
-categories: [Blogging, git]
+categories: [Tools, git]
 tags: [Git]
 image:
   path: /common/posts/git/git-scm.png

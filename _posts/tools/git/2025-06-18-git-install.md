@@ -3,7 +3,7 @@ title: Git 安装
 description: 不同平台安装 git。
 author: yu
 date: 2025-06-18 16:06:29 +0800
-categories: [Blogging, git]
+categories: [Tools, git]
 tags: [Git]
 ---
 

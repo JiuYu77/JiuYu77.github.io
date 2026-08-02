@@ -3,7 +3,7 @@ title: Git 配置
 description: 安装git后，需要配置一下；查看配置。
 author: yu
 date: 2025-06-18 17:00:00 +0800
-categories: [Blogging, git]
+categories: [Tools, git]
 tags: [Git]
 ---
 
