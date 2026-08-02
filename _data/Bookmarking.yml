@@ -188,7 +188,7 @@ categories:
 
       - name: IEEE
         url: https://www.ieee.org
-        icon: https://www.ieee.org/etc/designs/ieee-org/favicon-48x48.png
+        icon: /common/img/icon/IEEE.png
         description: the world's largest technical professional organization; advancing technology for the benefit of humanity.
 
       - name: arXiv.org e-Print archive
