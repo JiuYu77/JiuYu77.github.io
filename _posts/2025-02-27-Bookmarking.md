@@ -58,16 +58,10 @@ pin: true
   display: grid;
   grid-template-areas: "icon name";
   grid-template-columns: auto 1fr;
-  gap: 1.5rem 2rem;
+  gap: 0 2rem;
   align-items: center;
 }
 
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
 .card-name{
   grid-area: name;
   color: rgb(114, 223, 186);
@@ -77,7 +71,6 @@ pin: true
 
   height: 80px;
   display: flex;
-  justify-items: center;
   align-items: center;
 }
 
@@ -85,7 +78,6 @@ pin: true
   grid-area: icon;
   width: 80px;
   height: 80px;
-  aspect-ratio: 1/1;
   border-radius: 14px;
   padding: 12px;
   display: grid;
@@ -95,12 +87,10 @@ pin: true
 .favicon {
   width: 100%;
   height: auto;
-  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .card-link {
-  color: #3b82f6;
   text-decoration: none;
   display: block;
 }
@@ -174,7 +164,7 @@ pin: true
     <div class="card-grid">
       {% for item in category.items %}
       <div class="bookmark-card">
-        <a class="card-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+        <a class="card-link img-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <div class="card-content">
             <div class="div-img"><img class="favicon" src="{{ item.icon }}" alt="{{ item.name }}"/></div>
             <div class="card-name">{{ item.name }}</div>
