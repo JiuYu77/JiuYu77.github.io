@@ -18,7 +18,7 @@ Codex的配置、使用过程产生的信息等数据，默认存储在：
 
 对于Windows系统，目前无法通过设置`CODEX_HOME` 或 `CODEX_DIR`环境变量，改变`Codex App`的存储路径。
 
-但可以通过创建`符号链接`实现修改存储目录：
+但可以通过创建`符号链接`实现修改存储目录，`管理员`身份打开`命令提示符`，然后执行命令：
 ```bat
 mklink /D "%USERPROFILE%\.codex" "D:\path\to\.codex"
 ```
