@@ -1,6 +1,6 @@
 ---
 title: 修改 Codex 数据存储目录
-description: 对于windows系统，codex数据默认存储到c:\User\用户名\.codex目录。
+description: 对于windows系统，codex数据默认存储到c盘用户目录下的.codex目录。
 author: yu
 date: 2026-08-09 18:07:58 +0800
 categories: [AI, Codex]
