@@ -55,63 +55,63 @@ arg=$1
 
 
 set_proxy() {
-	default_all_port=1089
-	default_http_port=8889
+  default_all_port=1089
+  default_http_port=8889
   default_all_protocol=socks5
 
 
-	read -p "Please enter all_proxy port ($default_all_port by default):" all_port
-	all_port=${all_port:-$default_all_port}
+  read -p "Please enter all_proxy port ($default_all_port by default):" all_port
+  all_port=${all_port:-$default_all_port}
 
-	read -p "Please enter all_proxy protocol, socks5 or http ($default_all_protocol by default):" all_protocol
-	all_protocol=${all_protocol:-$default_all_protocol}
+  read -p "Please enter all_proxy protocol, socks5 or http ($default_all_protocol by default):" all_protocol
+  all_protocol=${all_protocol:-$default_all_protocol}
 
-	read -p "Please enter http_proxy port ($default_http_port by default):" http_port
-	http_port=${http_port:-$default_http_port}
+  read -p "Please enter http_proxy port ($default_http_port by default):" http_port
+  http_port=${http_port:-$default_http_port}
 
   # 小写
-	# export all_proxy=socks5://127.0.0.1:$all_port
-	export all_proxy=$all_protocol://127.0.0.1:$all_port
-  
-	export http_proxy=http://127.0.0.1:$http_port
-	export https_proxy=http://127.0.0.1:$http_port
+  # export all_proxy=socks5://127.0.0.1:$all_port
+  export all_proxy=$all_protocol://127.0.0.1:$all_port
+
+  export http_proxy=http://127.0.0.1:$http_port
+  export https_proxy=http://127.0.0.1:$http_port
 
   # 大写
-	# export ALL_PROXY=socks5://127.0.0.1:$all_port
-	export ALL_PROXY=$all_protocol://127.0.0.1:$all_port
+  # export ALL_PROXY=socks5://127.0.0.1:$all_port
+  export ALL_PROXY=$all_protocol://127.0.0.1:$all_port
 
-	export HTTP_PROXY=http://127.0.0.1:$http_port
-	export HTTPS_PROXY=http://127.0.0.1:$http_port
+  export HTTP_PROXY=http://127.0.0.1:$http_port
+  export HTTPS_PROXY=http://127.0.0.1:$http_port
 }
 
 unset_proxy() {
   unset all_proxy
-	unset http_proxy
-	unset https_proxy
+  unset http_proxy
+  unset https_proxy
 
-	unset ALL_PROXY
-	unset HTTP_PROXY
-	unset HTTPS_PROXY
+  unset ALL_PROXY
+  unset HTTP_PROXY
+  unset HTTPS_PROXY
 }
 
 help() {
-	echo "    help:"
-	echo "       set      set proxy"
-	echo "       unset    unset proxy"
-	echo "       proxy    check proxy"
-	echo "       help     help information"
-	echo
-	echo -e "use \e[32m. proxy.sh\e[0m or \e[32msource proxy.sh\e[0m"
+  echo "    help:"
+  echo "       set      set proxy"
+  echo "       unset    unset proxy"
+  echo "       proxy    check proxy"
+  echo "       help     help information"
+  echo
+  echo -e "use \e[32m. proxy.sh\e[0m or \e[32msource proxy.sh\e[0m"
 }
 
 if [[ $arg = 'set' ]];then
-	set_proxy
+  set_proxy
 elif [[ $arg = 'unset' ]];then
-	unset_proxy
+  unset_proxy
 elif [[ $arg = 'proxy' ]];then
-	env |grep -i proxy
+  env |grep -i proxy
 else
-	help
+  help
 fi
 ```
 
