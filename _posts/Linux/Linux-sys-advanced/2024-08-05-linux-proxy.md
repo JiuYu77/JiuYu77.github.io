@@ -1,6 +1,6 @@
 ---
-title: Windows代理（proxy）设置
-description: Windows代理（proxy），临时设置、永久设置。
+title: Linux代理（proxy）设置
+description: Linux代理（proxy），设置环境变量。
 author: yu
 date: 2024-08-05 13:39:00 +0800
 categories: [Linux, Linux系统-进阶]
