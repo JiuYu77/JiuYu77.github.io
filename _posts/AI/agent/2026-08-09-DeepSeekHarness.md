@@ -65,12 +65,15 @@ DeekSeek Harness 支持自定义模型，即配置非deepseek官网的模型，�
 DeepSeek Harness 目前支持`text`、`image`两种输入格式。
 
 默认情况下，配置文件中，不存在输入格式配置：
+
 ![](common/posts/deepseek-harness/ds-harness-01.png)
 
 `defaultInput: [text, image]`，相当于全局配置：
+
 ![](common/posts/deepseek-harness/ds-harness-02.png)
 
 `input: [text, image]`，则可以单独控制每个模型的输出支持：
+
 ![](common/posts/deepseek-harness/ds-harness-03.png)
 
 defaultInput 和 input 同时出现时，input优先级更高：
