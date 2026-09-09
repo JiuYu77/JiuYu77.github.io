@@ -75,3 +75,5 @@ DeepSeek Harness 目前支持`text`、`image`两种输入格式。
 
 defaultInput 和 input 同时出现时，input优先级更高：
 ![](common/posts/deepseek-harness/ds-harness-04.png)
+
+若多个模型中存在只支持 text的，可使用`input: [text]`。
