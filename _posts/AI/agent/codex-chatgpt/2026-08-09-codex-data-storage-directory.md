@@ -14,7 +14,11 @@ Codex的配置、使用过程产生的信息等数据，默认存储在：
 
 尤其对于windows用户来说，若遇到C盘空间不足等原因，可能需要迁移Codex的数据，并修改存储路径。
 
-## Codex App 存储目录修改
+## Codex App / cli 存储目录修改
+
+通过设置`CODEX_HOME`环境变量，改变`Codex`的存储路径。
+
+## Codex App 存储目录修改（历史方案）
 
 对于Windows系统，目前无法通过设置`CODEX_HOME` 或 `CODEX_DIR`环境变量，改变`Codex App`的存储路径。
 
