@@ -9,7 +9,7 @@ tags: [AI, DeepSeek Harness]
 
 ## 官方
 
-DeepSeek Harness，DS Harness
+DeepSeek Harness，DS Harness，DSH。
 
 **官网**：[https://www.deepseek.com/harness](https://www.deepseek.com/harness)
 
@@ -58,7 +58,17 @@ DeekSeek Harness 支持自定义模型，即配置非deepseek官网的模型，�
 
 但配置好的模型，默认只支持文本输入，即使模型本身可以接受图片。
 
-但DS Harness界面上，没有提供设置模型支持的输入模态的方式。
+
+### 界面操作（新增）
+
+图形界面设置模型输入类型，是DSH新增的功能。
+
+![](common/posts/deepseek-harness/ds-harness-05.png)
+
+
+### 手动改配置文件
+
+DS Harness刚发布的几个版本，其界面上，没有提供设置模型支持的输入模态的方式。
 
 我们需要手动修改DS Harness配置文件`settings.yaml`。
 
